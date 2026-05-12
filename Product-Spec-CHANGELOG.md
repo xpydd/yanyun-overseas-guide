@@ -1,5 +1,14 @@
 # 变更记录
 
+## [v0.6.2] - 2026-05-12
+### 新增
+- 将仓库发布策略调整为 public 仓库 + GitHub Pages，以获得可公开访问的静态页面链接。
+- 确认 Pages 使用 `main` 分支根目录发布，页面地址为 `https://xpydd.github.io/yanyun-overseas-guide/`。
+
+### 修改
+- 将项目状态从“私有仓库发布阶段”更新为“GitHub Pages 公开发布阶段”。
+- 更新 README 与 Product Spec 中关于私有仓库 Pages 套餐限制的说明。
+
 ## [v0.6.1] - 2026-05-12
 ### 新增
 - 配置私有 GitHub 仓库发布流程，目标仓库为 `xpydd/yanyun-overseas-guide`。

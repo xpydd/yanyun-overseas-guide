@@ -181,8 +181,8 @@
 - **前端**：原生 HTML5 + CSS3 + JavaScript (ES6+)
 - **运行**：本地静态文件（双击打开）或本地 HTTP 服务器
 - **上线（低成本）**：GitHub Pages + 自有域名 + Cloudflare（DNS/HTTPS/缓存）
-- **当前目标发布地址**：https://xpydd.github.io/yanyun-overseas-guide/
-- **发布状态**：私有 GitHub 仓库已推送；GitHub Pages 因当前账号套餐不支持私有仓库 Pages，待切换公开仓库或升级套餐后启用。
+- **当前发布地址**：https://xpydd.github.io/yanyun-overseas-guide/
+- **发布状态**：仓库切换为公开仓库，GitHub Pages 使用 `main` 分支根目录发布。
 
 ### 4.2 文件结构
 ```
@@ -268,8 +268,8 @@ yanyun-overseas-guide/
 - [x] 问题排查模块：常见问题FAQ + 分类展示
 - [x] SEO优化：meta标签 + Open Graph + 结构化数据
 - [x] 上线部署说明：GitHub Pages + 域名 + Cloudflare（说明写入 README）
-- [x] 创建私有 GitHub 仓库并推送项目代码
-- [ ] 启用 GitHub Pages：当前账号套餐不支持私有仓库 Pages，需切换公开仓库或升级套餐
+- [x] 创建 GitHub 仓库并推送项目代码
+- [x] 将仓库切换为 public 并启用 GitHub Pages
 
 ### 6.2 中期（1-2月）
 - [x] 地图探索模块：waypoints + 收集品 + 隐藏入口（静态 SEO 页面 + 区域清单）
@@ -306,7 +306,7 @@ python3 -m http.server 4173
 
 ## 8. 项目状态
 
-**当前版本**：v0.6.1（私有仓库发布阶段）
+**当前版本**：v0.6.2（GitHub Pages 公开发布阶段）
 
 **已完成**：
 - ✅ 页面结构和布局
@@ -330,13 +330,13 @@ python3 -m http.server 4173
 - ✅ 静态 SEO 多页拆分（Builds / Map / Updates / FAQ / Terms）
 - ✅ 英文单语策略
 - ✅ 无构建工具静态部署策略
-- ✅ 私有 GitHub 仓库创建与代码推送
+- ✅ GitHub 仓库创建与代码推送
+- ✅ 仓库公开化与 GitHub Pages 启用
 
 **进行中**：
-- 🔄 GitHub Pages 发布方案确认（公开仓库 / 升级套餐 / 其他静态托管）
+- 🔄 等待 GitHub Pages 首次构建生效
 
 **待开始**：
-- ⏳ GitHub Pages 启用与分享链接
 - ⏳ 自有域名与 Cloudflare 配置（按需）
 
 ---
