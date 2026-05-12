@@ -1,0 +1,61 @@
+# macOS / Finder
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Editor and local workspace files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Codex / agent-local files
+.playwright-mcp/
+.agents/
+.claude/
+.codex/
+AGENTS.md
+
+# Logs and runtime dumps
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.pid
+*.seed
+*.stackdump
+
+# Dependency and build artifacts, kept for safety even though this is static-only
+node_modules/
+dist/
+build/
+out/
+.parcel-cache/
+.vite/
+.cache/
+coverage/
+
+# Local server / generated scratch files
+.tmp/
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+
+# Environment and credential files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.mobileprovision
+
+# OS thumbnails
+Thumbs.db
+ehthumbs.db
+Desktop.ini

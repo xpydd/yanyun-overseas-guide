@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xpydd.github.io/yanyun-overseas-guide/sitemap.xml
