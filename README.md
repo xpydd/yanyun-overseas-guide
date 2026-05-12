@@ -23,6 +23,9 @@ http://localhost:4173
 index.html        首页总览
 builds.html       武学流派 SEO 页面
 map.html          地图探索 SEO 页面
+articles.html     100 篇英文攻略文章索引
+articles/         独立英文攻略文章页面
+articles-data.js  首页搜索使用的文章索引
 updates.html      版本追踪 SEO 页面
 faq.html          问题排查 SEO 页面
 terminology.html  术语对照 SEO 页面
@@ -34,6 +37,12 @@ robots.txt        抓取规则
 ```
 
 本项目不使用构建工具，直接托管静态文件即可。
+
+## 内容规模
+
+- 100 篇英文静态攻略文章，覆盖新手路线、武学搭配、地图探索、日常任务、术语系统、问题排查和版本发布。
+- sitemap 已收录所有文章页，方便 GitHub Pages 静态托管和搜索引擎抓取。
+- 图片辅助说明使用已验证可访问的 Steam 官方公开素材链接。
 
 ## 线上地址
 

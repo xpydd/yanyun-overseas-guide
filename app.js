@@ -6,6 +6,7 @@ const {
   versionUpdates,
   mapData,
 } = window.GuideData;
+const articlesData = window.GuideArticles || [];
 
 const routeData = {
   story: {
@@ -642,6 +643,11 @@ function openSearchResult(result) {
   if (result.type === "Data") {
     openModal(dataModal);
     setDataStatus("");
+    return;
+  }
+
+  if (result.type === "Article") {
+    window.location.href = result.url;
   }
 }
 
@@ -685,6 +691,19 @@ globalSearchInput.addEventListener("input", (e) => {
     const haystack = [region.region, region.priority, region.focus, ...region.checkpoints, region.tip].join(" ").toLowerCase();
     if (haystack.includes(query)) {
       results.push({ type: "Map", title: region.region, subtitle: region.focus, link: "#map", region: region.region });
+    }
+  });
+
+  articlesData.forEach(article => {
+    const haystack = [
+      article.title,
+      article.category,
+      article.description,
+      article.level,
+      article.keywords.join(" ")
+    ].join(" ").toLowerCase();
+    if (haystack.includes(query)) {
+      results.push({ type: "Article", title: article.title, subtitle: article.description, link: article.url, url: article.url });
     }
   });
 

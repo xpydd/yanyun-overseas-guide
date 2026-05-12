@@ -190,6 +190,9 @@ yanyun-overseas-guide/
 ├── index.html          # 首页与交互入口
 ├── builds.html         # 武学流派 SEO 页面
 ├── map.html            # 地图探索 SEO 页面
+├── articles.html       # 100 篇英文攻略文章索引
+├── articles/           # 独立英文攻略文章静态页面
+├── articles-data.js    # 文章搜索索引数据
 ├── updates.html        # 版本追踪 SEO 页面
 ├── faq.html            # 问题排查 SEO 页面
 ├── terminology.html    # 术语对照 SEO 页面
@@ -257,6 +260,9 @@ yanyun-overseas-guide/
 - [x] 拆分 SEO 静态页面：首页、Builds、Map、Updates、FAQ、Terminology 分页承载内容
 - [x] 确认英文单语策略：面向海外玩家，不做语言切换
 - [x] 确认无构建工具策略：继续使用可直接托管的静态 HTML/CSS/JS
+- [x] 新增 100 篇英文 SEO 攻略文章：覆盖新手、武学、地图、日常、术语、问题排查和版本发布
+- [x] 新增真实图片辅助说明：使用已验证可访问的 Steam 官方公开图片资源，不使用返回 403 的新闻页图片直链
+- [x] 扩展全站搜索：支持搜索并跳转文章页
 
 ### 6.1 短期（1-2周）
 - [x] 调整信息架构：4 个核心模块入口与内容框架（路线 / 流派 / 每日 / 更新）
@@ -282,6 +288,7 @@ yanyun-overseas-guide/
 - [x] 无构建工具静态站策略（不引入 Vite/Parcel）
 - [x] 用户数据导入/导出（个人进度/收藏/清单）
 - [x] 组件化重构（共享 data.js / styles.css，模块拆分为静态页面）
+- [x] 攻略内容库（100 篇英文静态文章 + sitemap 收录）
 
 ---
 
@@ -306,7 +313,7 @@ python3 -m http.server 4173
 
 ## 8. 项目状态
 
-**当前版本**：v0.6.2（GitHub Pages 公开发布阶段）
+**当前版本**：v0.7.0（内容库扩展阶段）
 
 **已完成**：
 - ✅ 页面结构和布局
@@ -332,9 +339,12 @@ python3 -m http.server 4173
 - ✅ 无构建工具静态部署策略
 - ✅ GitHub 仓库创建与代码推送
 - ✅ 仓库公开化与 GitHub Pages 启用
+- ✅ 100 篇英文攻略文章
+- ✅ 真实官方图片辅助说明
+- ✅ 文章索引页与文章搜索入口
 
 **进行中**：
-- 🔄 等待 GitHub Pages 首次构建生效
+- 🔄 内容深度校对与后续真实截图补充
 
 **待开始**：
 - ⏳ 自有域名与 Cloudflare 配置（按需）
