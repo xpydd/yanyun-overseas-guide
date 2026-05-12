@@ -38,7 +38,9 @@ robots.txt        抓取规则
 ## 线上地址
 
 - GitHub 仓库：`https://github.com/xpydd/yanyun-overseas-guide`
-- GitHub Pages：`https://xpydd.github.io/yanyun-overseas-guide/`
+- GitHub Pages 目标地址：`https://xpydd.github.io/yanyun-overseas-guide/`
+
+> 当前 GitHub 账号套餐不支持私有仓库启用 GitHub Pages。若保持仓库私有，需要升级到支持私有仓库 Pages 的套餐；若接受公开站点源码，可将仓库改为 public 后启用 Pages。
 
 ## 部署方式
 

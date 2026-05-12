@@ -3,12 +3,12 @@
 ## [v0.6.1] - 2026-05-12
 ### 新增
 - 配置私有 GitHub 仓库发布流程，目标仓库为 `xpydd/yanyun-overseas-guide`。
-- 确认 GitHub Pages 项目页地址为 `https://xpydd.github.io/yanyun-overseas-guide/`。
+- 记录 GitHub Pages 目标项目页地址为 `https://xpydd.github.io/yanyun-overseas-guide/`。
 - 扩充 `.gitignore`，避免上传本地工具目录、依赖目录、构建产物、日志、临时文件和凭证文件。
 
 ### 修改
 - 将 canonical、sitemap 与 robots 的线上基础地址调整为 GitHub Pages 项目页路径。
-- 将项目状态从“实际上线发布准备”更新为“等待 GitHub Pages 首次构建生效”。
+- 将项目状态更新为“私有仓库已推送，Pages 因当前账号套餐不支持私有仓库 Pages 待处理”。
 
 ## [v0.6.0] - 2026-05-12
 ### 新增
