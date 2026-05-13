@@ -5,7 +5,11 @@
 - 新增 `articles.html` 文章索引页与 `articles/` 目录，生成 100 篇英文静态攻略文章。
 - 新增 `articles-data.js`，用于首页全站搜索检索文章并跳转到独立文章页。
 - 新增文章 sitemap 收录，覆盖首页、模块页与 100 篇攻略页。
-- 新增武学与地图页面的官方图片辅助说明区，图片使用已验证可访问的 Steam 官方公开资源。
+- 新增武学与地图页面的官方图片辅助说明区，图片使用已验证可访问的 Steam 官方公开资源并保存到 `assets/images/`。
+  - `where-winds-meet-header.jpg`
+  - `where-winds-meet-combat-capsule.jpg`
+  - `where-winds-meet-map-hero.jpg`
+  - `where-winds-meet-open-world-bg.jpg`
 
 ### 修改
 - 首页导航和模块入口增加 Articles。
