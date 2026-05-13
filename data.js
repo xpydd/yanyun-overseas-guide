@@ -24,10 +24,110 @@ const buildPlans = [
 
 const difficultyOrder = ["Beginner", "Easy", "Intermediate", "Advanced", "Hard"];
 const tierOrder = ["B", "A", "S"];
+const roleProfiles = {
+  "Balanced DPS": {
+    rhythm: "steady weave",
+    keyWindow: "after dodge, parry, or stance break",
+    failSignal: "swapping too early and losing safe uptime",
+    visualClass: "duelist",
+  },
+  "Burst DPS": {
+    rhythm: "short burst",
+    keyWindow: "enemy recovery and teammate setup",
+    failSignal: "spending burst before the target is locked",
+    visualClass: "burst",
+  },
+  "Support/Healer": {
+    rhythm: "protective cycle",
+    keyWindow: "before group damage and after failed dodges",
+    failSignal: "healing late instead of preventing pressure",
+    visualClass: "support",
+  },
+  Tank: {
+    rhythm: "frontline anchor",
+    keyWindow: "boss aggro, block, and break timing",
+    failSignal: "chasing damage while mitigation is down",
+    visualClass: "guard",
+  },
+  "Ranged DPS": {
+    rhythm: "spacing control",
+    keyWindow: "safe air time and ranged punish windows",
+    failSignal: "standing still after a ranged string",
+    visualClass: "ranged",
+  },
+  "Fast DPS": {
+    rhythm: "high-tempo chase",
+    keyWindow: "after mobility bait and confirmed pursuit",
+    failSignal: "empty stamina with no disengage path",
+    visualClass: "chase",
+  },
+  "Hybrid DPS": {
+    rhythm: "flex rotation",
+    keyWindow: "minor enemy packs and low-risk boss openings",
+    failSignal: "trying to force peak damage from a comfort route",
+    visualClass: "hybrid",
+  },
+  Bruiser: {
+    rhythm: "pressure trade",
+    keyWindow: "stagger, block, and counter-hit windows",
+    failSignal: "trading into burst without defensive resources",
+    visualClass: "bruiser",
+  },
+  "Boss Breaker": {
+    rhythm: "break-and-punish",
+    keyWindow: "stance damage into visible recovery",
+    failSignal: "using break tools while the boss is invulnerable",
+    visualClass: "breaker",
+  },
+  "Control Support": {
+    rhythm: "control ladder",
+    keyWindow: "crowd-control chain and group reset windows",
+    failSignal: "overlapping control before allies can follow up",
+    visualClass: "control",
+  },
+  Frontline: {
+    rhythm: "safe pressure",
+    keyWindow: "block confirms and predictable boss strings",
+    failSignal: "turning a learning build into a greedy DPS build",
+    visualClass: "guard",
+  },
+  "Solo Sustain": {
+    rhythm: "recover and punish",
+    keyWindow: "self-heal, poke, and short punish windows",
+    failSignal: "saving sustain until one hit too late",
+    visualClass: "support",
+  },
+  Skirmisher: {
+    rhythm: "hit-and-run",
+    keyWindow: "whiff punish and forced spacing resets",
+    failSignal: "staying in melee after the punish window closes",
+    visualClass: "chase",
+  },
+};
+const planProfiles = {
+  Starter: { pace: "Low risk", opener: "safe poke", pressure: "practice consistency" },
+  Dungeon: { pace: "Repeatable", opener: "pre-buff", pressure: "boss window timing" },
+  PvP: { pace: "Reactive", opener: "spacing test", pressure: "confirmed punish" },
+  Farm: { pace: "Low maintenance", opener: "group enemies", pressure: "route speed" },
+};
 
 function shiftValue(items, value, shift) {
   const index = Math.max(0, Math.min(items.length - 1, items.indexOf(value) + shift));
   return items[index];
+}
+
+function buildCombatProfile(pair, plan) {
+  const roleProfile = roleProfiles[pair.role] || roleProfiles["Balanced DPS"];
+  const planProfile = planProfiles[plan.label] || planProfiles.Starter;
+  return {
+    rhythm: roleProfile.rhythm,
+    keyWindow: roleProfile.keyWindow,
+    failSignal: roleProfile.failSignal,
+    visualClass: roleProfile.visualClass,
+    pace: planProfile.pace,
+    opener: planProfile.opener,
+    pressure: planProfile.pressure,
+  };
 }
 
 const buildsData = buildPairs.flatMap((pair, pairIndex) =>
@@ -49,6 +149,7 @@ const buildsData = buildPairs.flatMap((pair, pairIndex) =>
     rotation: plan.rotation,
     alternatives: plan.alternatives,
     scenarios: plan.scenarios,
+    combatProfile: buildCombatProfile(pair, plan),
     tags: [plan.label, pair.role, ...pair.weapons],
   }))
 );
@@ -166,22 +267,55 @@ const mapData = [
     region: "Qinghe",
     priority: "First route",
     focus: "Starter exploration, waypoints, early encounters",
+    image: "./assets/images/where-winds-meet-open-world-bg.jpg",
+    time: "25-45 min",
+    rewardType: "Waypoints + early chests",
+    risk: "Low",
+    routeTheme: "onboarding loop",
     checkpoints: ["Unlock nearby waypoints before side quests", "Mark short encounters for fragmented play sessions", "Keep material runs close to teleport points"],
-    tip: "Use this as the low-pressure onboarding region before chasing completion."
+    tip: "Use this as the low-pressure onboarding region before chasing completion.",
+    nodes: [
+      { label: "Start", x: 14, y: 70, type: "waypoint" },
+      { label: "River path", x: 34, y: 52, type: "resource" },
+      { label: "Hidden note", x: 58, y: 34, type: "hidden" },
+      { label: "Return hub", x: 78, y: 58, type: "vendor" },
+    ],
   },
   {
     region: "Kaifeng",
     priority: "Main city hub",
     focus: "Vendors, social systems, quest density",
+    image: "./assets/images/where-winds-meet-map-hero.jpg",
+    time: "15-30 min",
+    rewardType: "Vendors + upgrades",
+    risk: "Low",
+    routeTheme: "maintenance loop",
     checkpoints: ["Record repeatable vendor stops", "Separate story errands from daily routine tasks", "Use hub visits to clean inventory and upgrade gear"],
-    tip: "Treat Kaifeng as a maintenance stop, not a place to wander without a plan."
+    tip: "Treat Kaifeng as a maintenance stop, not a place to wander without a plan.",
+    nodes: [
+      { label: "Gate", x: 18, y: 42, type: "waypoint" },
+      { label: "Vendor", x: 42, y: 58, type: "vendor" },
+      { label: "Upgrade", x: 62, y: 44, type: "resource" },
+      { label: "Guild", x: 82, y: 34, type: "event" },
+    ],
   },
   {
     region: "Hexi",
     priority: "Expansion route",
     focus: "Jade Gate Pass, Liangzhou, Qinchuan update trail",
+    image: "./assets/images/where-winds-meet-map-hero.jpg",
+    time: "45-90 min",
+    rewardType: "Bosses + event entries",
+    risk: "Medium",
+    routeTheme: "expansion sweep",
     checkpoints: ["Start with main chapter unlocks", "Track bosses and event entries separately", "Update daily checklist when limited-time activities appear"],
-    tip: "Expansion zones age fast; keep source links beside each update."
+    tip: "Expansion zones age fast; keep source links beside each update.",
+    nodes: [
+      { label: "Pass", x: 10, y: 62, type: "waypoint" },
+      { label: "Boss", x: 36, y: 36, type: "boss" },
+      { label: "Event", x: 64, y: 50, type: "event" },
+      { label: "Qinchuan prep", x: 86, y: 28, type: "hidden" },
+    ],
   }
 ];
 

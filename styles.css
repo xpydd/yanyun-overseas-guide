@@ -652,6 +652,77 @@ p {
 
 .media-card > div {
   padding: 28px;
+  min-width: 0;
+}
+
+.media-card h2 {
+  font-size: clamp(26px, 2.6vw, 40px);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+.combat-lab-panel,
+.map-planner-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1fr);
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(79, 174, 140, 0.1), transparent 48%),
+    rgba(36, 32, 28, 0.76);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.combat-lab-panel > div,
+.map-planner-panel > div {
+  min-width: 0;
+}
+
+.combat-lab-panel h2,
+.map-planner-panel h2 {
+  font-size: clamp(26px, 2.6vw, 40px);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.combat-lab-panel p,
+.map-planner-panel p {
+  overflow-wrap: anywhere;
+}
+
+.combo-matrix {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.combo-matrix span,
+.combo-matrix strong {
+  padding: 14px;
+  background: rgba(23, 21, 20, 0.76);
+  line-height: 1.45;
+}
+
+.combo-matrix span {
+  color: var(--gold);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.combo-matrix strong {
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .article-index-group {
@@ -666,13 +737,52 @@ p {
 }
 
 .article-list-card {
-  min-height: 220px;
+  display: grid;
+  min-height: 280px;
   padding: 22px;
   border: 1px solid var(--line);
   background: rgba(36, 32, 28, 0.76);
   color: inherit;
   text-decoration: none;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+  min-width: 0;
+}
+
+.article-list-card::before {
+  content: "";
+  display: block;
+  height: 118px;
+  margin: -22px -22px 18px;
+  background:
+    linear-gradient(180deg, rgba(16, 15, 14, 0.04), rgba(16, 15, 14, 0.68)),
+    var(--article-image, url("./assets/images/where-winds-meet-header.jpg")) center / cover;
+  border-bottom: 1px solid var(--line);
+  filter: saturate(1.06) contrast(1.04);
+}
+
+.article-index-group:nth-of-type(2) {
+  --article-image: url("./assets/images/where-winds-meet-header.jpg");
+}
+
+.article-index-group:nth-of-type(3) {
+  --article-image: url("./assets/images/where-winds-meet-combat-capsule.jpg");
+}
+
+.article-index-group:nth-of-type(4) {
+  --article-image: url("./assets/images/where-winds-meet-map-hero.jpg");
+}
+
+.article-index-group:nth-of-type(5),
+.article-index-group:nth-of-type(6) {
+  --article-image: url("./assets/images/where-winds-meet-open-world-bg.jpg");
+}
+
+.article-index-group:nth-of-type(7) {
+  --article-image: url("./assets/images/where-winds-meet-header.jpg");
+}
+
+.article-index-group:nth-of-type(8) {
+  --article-image: url("./assets/images/where-winds-meet-map-hero.jpg");
 }
 
 .article-list-card:hover {
@@ -693,6 +803,16 @@ p {
   font-weight: 700;
 }
 
+.article-list-card h3 {
+  font-size: clamp(20px, 1.8vw, 26px);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+.article-list-card p {
+  overflow-wrap: anywhere;
+}
+
 .article-page article {
   max-width: 920px;
   margin: 0 auto;
@@ -710,17 +830,29 @@ p {
 }
 
 .guide-image {
+  position: relative;
   margin: 28px 0 44px;
   border: 1px solid var(--line);
   background: rgba(36, 32, 28, 0.76);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 .guide-image img {
   max-height: 420px;
+  filter: saturate(1.1) contrast(1.08);
 }
 
 .guide-image figcaption {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  max-width: min(520px, calc(100% - 32px));
   padding: 12px 16px;
+  border: 1px solid var(--line);
+  background: rgba(23, 21, 20, 0.78);
+  backdrop-filter: blur(12px);
   color: var(--muted);
   font-size: 13px;
   line-height: 1.6;
@@ -934,7 +1066,9 @@ p {
   .check-grid,
   .resource-grid,
   .article-list-grid,
-  .media-card.wide {
+  .media-card.wide,
+  .combat-lab-panel,
+  .map-planner-panel {
     grid-template-columns: 1fr;
   }
 
@@ -979,6 +1113,15 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .build-combat-profile,
+  .map-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .combo-matrix {
+    grid-template-columns: 1fr;
+  }
+
   .footer {
     display: grid;
     gap: 10px;
@@ -1005,6 +1148,113 @@ p {
   border: 1px solid var(--line);
   background: rgba(23, 21, 20, 0.54);
   border-radius: 8px;
+  min-width: 0;
+}
+
+.map-route-card {
+  position: relative;
+  min-height: 170px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(215, 163, 58, 0.22);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.static-route-board {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #13100d;
+}
+
+.map-route-card img,
+.static-route-board img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.62;
+  filter: saturate(1.12) contrast(1.12);
+}
+
+.map-route-card::after,
+.static-route-board::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(215, 163, 58, 0.18), transparent 42%),
+    linear-gradient(0deg, rgba(16, 15, 14, 0.86), transparent 56%);
+  pointer-events: none;
+}
+
+.route-line {
+  position: absolute;
+  inset: 24% 12% 26%;
+  border-top: 2px dashed rgba(246, 239, 225, 0.78);
+  transform: rotate(-8deg);
+}
+
+.map-node,
+.static-route-board span {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  z-index: 2;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 2px solid rgba(246, 239, 225, 0.88);
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--paper);
+  font-size: 12px;
+  font-weight: 800;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.42);
+}
+
+.route-priority-list {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding-left: 22px;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.map-node-boss,
+.map-node-event {
+  background: var(--red);
+}
+
+.map-node-resource {
+  background: var(--jade);
+}
+
+.map-node-hidden,
+.map-node-vendor {
+  background: var(--blue);
+}
+
+.map-route-theme {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  max-width: calc(100% - 24px);
+  padding: 5px 8px;
+  border: 1px solid rgba(246, 239, 225, 0.28);
+  background: rgba(23, 21, 20, 0.72);
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .map-region-header {
@@ -1016,6 +1266,9 @@ p {
 .map-region h3 {
   margin: 0;
   color: var(--ink);
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
 }
 
 .map-region ul {
@@ -1024,6 +1277,43 @@ p {
   margin: 18px 0;
   padding-left: 20px;
   color: var(--ink);
+}
+
+.map-region p,
+.map-region li {
+  overflow-wrap: anywhere;
+}
+
+.map-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.map-meta-grid div {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(246, 239, 225, 0.12);
+  background: rgba(246, 239, 225, 0.05);
+  border-radius: 6px;
+}
+
+.map-meta-grid span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.map-meta-grid strong {
+  display: block;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .map-tip {
@@ -1054,16 +1344,68 @@ p {
 
 .builds-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
   gap: 1.5rem;
 }
 
 .build-card {
+  position: relative;
   padding: 1.5rem;
-  background: var(--paper-soft);
+  padding-top: 7.25rem;
+  min-width: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(246, 239, 225, 0.06), transparent 42%),
+    var(--paper-soft);
   border: 1px solid var(--line);
   border-radius: 8px;
   transition: all 0.3s;
+}
+
+.build-visual-strip {
+  position: absolute;
+  inset: 0 0 auto;
+  display: flex;
+  min-height: 88px;
+  align-items: flex-end;
+  padding: 14px 18px;
+  background:
+    linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
+    linear-gradient(135deg, rgba(215, 163, 58, 0.24), transparent 54%),
+    url("./assets/images/where-winds-meet-combat-capsule.jpg") center / cover;
+  color: var(--gold);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.build-style-burst .build-visual-strip,
+.build-style-breaker .build-visual-strip {
+  background:
+    linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
+    linear-gradient(135deg, rgba(185, 74, 58, 0.32), transparent 54%),
+    url("./assets/images/where-winds-meet-open-world-bg.jpg") center / cover;
+  color: #e38a80;
+}
+
+.build-style-support .build-visual-strip,
+.build-style-control .build-visual-strip {
+  background:
+    linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
+    linear-gradient(135deg, rgba(79, 174, 140, 0.32), transparent 54%),
+    url("./assets/images/where-winds-meet-map-hero.jpg") center / cover;
+  color: var(--jade);
+}
+
+.build-style-ranged .build-visual-strip,
+.build-style-chase .build-visual-strip {
+  background:
+    linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
+    linear-gradient(135deg, rgba(111, 166, 189, 0.34), transparent 54%),
+    url("./assets/images/where-winds-meet-header.jpg") center / cover;
+  color: #9fb7d6;
 }
 
 .build-card:hover {
@@ -1087,11 +1429,35 @@ p {
 .build-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 12px;
   margin-bottom: 0.5rem;
 }
 
+.build-header > div {
+  min-width: 0;
+}
+
+.build-header h3 {
+  margin: 4px 0 0;
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+.build-pace {
+  display: inline-flex;
+  padding: 3px 7px;
+  border: 1px solid rgba(246, 239, 225, 0.14);
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .build-tier {
+  flex: 0 0 auto;
   padding: 0.25rem 0.75rem;
   background: var(--gold);
   color: var(--paper);
@@ -1107,18 +1473,92 @@ p {
 
 .build-stats {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
   font-size: 0.875rem;
 }
 
+.build-score-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.score-bar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 8px;
+  min-width: 0;
+  color: var(--ink);
+}
+
+.score-bar span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.score-bar strong {
+  font-size: 12px;
+}
+
+.score-bar i {
+  grid-column: 1 / -1;
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(246, 239, 225, 0.12);
+}
+
+.score-bar i::before {
+  content: "";
+  display: block;
+  width: var(--score);
+  height: 100%;
+  background: linear-gradient(90deg, var(--jade), var(--gold));
+}
+
 .build-difficulty {
+  grid-column: 1 / -1;
   color: var(--jade);
 }
 
 .build-description {
   margin-bottom: 1rem;
   line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.build-combat-profile {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.build-combat-profile div {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(246, 239, 225, 0.12);
+  background: rgba(246, 239, 225, 0.05);
+  border-radius: 6px;
+}
+
+.build-combat-profile span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.build-combat-profile strong {
+  display: block;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .build-details {
@@ -1175,6 +1615,11 @@ p {
   padding-left: 20px;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.failure-signal {
+  color: var(--ink);
+  overflow-wrap: anywhere;
 }
 
 .scenario-tags {
@@ -1489,7 +1934,7 @@ p {
 
 .seo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 16px;
   padding: 44px 0;
 }
@@ -1505,6 +1950,7 @@ p {
 .seo-card,
 .seo-article {
   padding: 22px;
+  min-width: 0;
 }
 
 .seo-card h2,
@@ -1512,6 +1958,27 @@ p {
 .seo-article h2,
 .seo-article h3 {
   margin-bottom: 10px;
+  max-width: 100%;
+  font-size: clamp(22px, 1.8vw, 30px);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.seo-card h3,
+.seo-article h3 {
+  font-size: clamp(20px, 1.8vw, 26px);
+}
+
+.seo-card p,
+.seo-article p,
+.seo-card li,
+.seo-article li,
+.seo-table td,
+.seo-table th {
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .seo-card ul,
@@ -1554,4 +2021,15 @@ p {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 24px;
+}
+
+@media (max-width: 520px) {
+  .build-combat-profile,
+  .map-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .combo-matrix {
+    grid-template-columns: 1fr;
+  }
 }

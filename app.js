@@ -246,11 +246,28 @@ const exportDataBtn = document.getElementById("export-data-btn");
 const importDataInput = document.getElementById("import-data-input");
 const dataStatus = document.getElementById("data-status");
 
+function renderScoreBar(label, value) {
+  const percent = Math.max(0, Math.min(100, value * 10));
+  return `
+    <div class="score-bar" style="--score:${percent}%">
+      <span>${label}</span>
+      <strong>${value}/10</strong>
+      <i aria-hidden="true"></i>
+    </div>
+  `;
+}
+
 function renderBuilds(builds) {
   buildsList.innerHTML = builds.map(build => `
-    <div class="build-card tier-${build.tier}">
+    <div class="build-card tier-${build.tier} build-style-${build.combatProfile.visualClass}">
+      <div class="build-visual-strip" aria-hidden="true">
+        <span>${build.combatProfile.rhythm}</span>
+      </div>
       <div class="build-header">
-        <h3>${build.name}</h3>
+        <div>
+          <span class="build-pace">${build.combatProfile.pace}</span>
+          <h3>${build.name}</h3>
+        </div>
         <span class="build-tier">${build.tier}</span>
       </div>
       <p class="build-name-zh">${build.nameZh}</p>
@@ -262,12 +279,17 @@ function renderBuilds(builds) {
         <input type="checkbox" data-favorite-id="${build.id}" ${favoriteBuildIds.has(String(build.id)) ? "checked" : ""} />
         Saved Build
       </label>
-      <div class="build-stats">
-        <span>PvE: ${build.pve}/10</span>
-        <span>PvP: ${build.pvp}/10</span>
+      <div class="build-stats build-score-grid">
+        ${renderScoreBar("PvE", build.pve)}
+        ${renderScoreBar("PvP", build.pvp)}
         <span class="build-difficulty">${build.difficulty}</span>
       </div>
       <p class="build-description">${build.description}</p>
+      <div class="build-combat-profile">
+        <div><span>Opener</span><strong>${build.combatProfile.opener}</strong></div>
+        <div><span>Key Window</span><strong>${build.combatProfile.keyWindow}</strong></div>
+        <div><span>Pressure</span><strong>${build.combatProfile.pressure}</strong></div>
+      </div>
       <div class="build-details">
         <p><strong>Role:</strong> ${build.role}</p>
         <p><strong>Weapons:</strong> ${build.weapons.join(", ")}</p>
@@ -283,6 +305,8 @@ function renderBuilds(builds) {
         <ul>${build.alternatives.map(item => `<li>${item}</li>`).join("")}</ul>
         <h4>Use Cases</h4>
         <div class="scenario-tags">${build.scenarios.map(item => `<span>${item}</span>`).join("")}</div>
+        <h4>Common Failure Signal</h4>
+        <p class="failure-signal">${build.combatProfile.failSignal}</p>
       </details>
     </div>
   `).join("");
@@ -421,14 +445,36 @@ function getFilteredBuilds() {
   });
 }
 
+function renderMapNodes(region) {
+  return (region.nodes || []).map((node, index) => `
+    <span
+      class="map-node map-node-${node.type}"
+      style="--x:${node.x}%; --y:${node.y}%"
+      title="${node.label}"
+      aria-label="${index + 1}. ${node.label}"
+    >${index + 1}</span>
+  `).join("");
+}
+
 function renderMapRegions(regions) {
   mapList.innerHTML = regions.map(region => `
     <article class="map-region">
+      <div class="map-route-card">
+        <img src="${region.image}" alt="" loading="lazy" />
+        <div class="route-line" aria-hidden="true"></div>
+        ${renderMapNodes(region)}
+        <span class="map-route-theme">${region.routeTheme}</span>
+      </div>
       <div class="map-region-header">
         <span>${region.priority}</span>
         <h3>${region.region}</h3>
       </div>
       <p>${region.focus}</p>
+      <div class="map-meta-grid">
+        <div><span>Time</span><strong>${region.time}</strong></div>
+        <div><span>Reward</span><strong>${region.rewardType}</strong></div>
+        <div><span>Risk</span><strong>${region.risk}</strong></div>
+      </div>
       <ul>
         ${region.checkpoints.map(checkpoint => `<li>${checkpoint}</li>`).join("")}
       </ul>
