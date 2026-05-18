@@ -1,0 +1,574 @@
+- generic [ref=e2]:
+  - banner "Main navigation" [ref=e3]:
+    - link "风 Overseas Guide Where Winds Meet" [ref=e4] [cursor=pointer]:
+      - /url: ./index.html
+      - generic [ref=e5]: 风
+      - generic [ref=e6]:
+        - strong [ref=e7]: Overseas Guide
+        - generic [ref=e8]: Where Winds Meet
+    - navigation "Site pages" [ref=e9]:
+      - link "Home" [ref=e10] [cursor=pointer]:
+        - /url: ./index.html
+      - link "Builds" [ref=e11] [cursor=pointer]:
+        - /url: ./builds.html
+      - link "Map" [ref=e12] [cursor=pointer]:
+        - /url: ./map.html
+      - link "Articles" [ref=e13] [cursor=pointer]:
+        - /url: ./articles.html
+      - link "Updates" [ref=e14] [cursor=pointer]:
+        - /url: ./updates.html
+      - link "FAQ" [ref=e15] [cursor=pointer]:
+        - /url: ./faq.html
+      - link "Terms" [ref=e16] [cursor=pointer]:
+        - /url: ./terminology.html
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - paragraph [ref=e19]: Guide Library
+      - heading "100 English Where Winds Meet Guides" [level=1] [ref=e20]
+      - paragraph [ref=e21]: Static SEO article pages for overseas players. Each article uses real project data, official image context, and source links for patch-sensitive claims.
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - paragraph [ref=e24]: Beginner Guide
+        - heading "Beginner Guide Articles" [level=2] [ref=e25]
+        - paragraph [ref=e26]: 15 focused guides for this topic.
+      - generic [ref=e27]:
+        - link "Beginner Guide Best First Hour Route For Overseas Players Best First Hour Route For Overseas Players for Where Winds Meet overseas players." [ref=e28] [cursor=pointer]:
+          - /url: ./articles/beginner-route-first-hour.html
+          - generic [ref=e29]: Beginner Guide
+          - heading "Best First Hour Route For Overseas Players" [level=3] [ref=e30]
+          - paragraph [ref=e31]: Best First Hour Route For Overseas Players for Where Winds Meet overseas players.
+        - link "Beginner Guide Server Region Checklist Before You Commit Server Region Checklist Before You Commit for Where Winds Meet overseas players." [ref=e32] [cursor=pointer]:
+          - /url: ./articles/server-region-checklist.html
+          - generic [ref=e33]: Beginner Guide
+          - heading "Server Region Checklist Before You Commit" [level=3] [ref=e34]
+          - paragraph [ref=e35]: Server Region Checklist Before You Commit for Where Winds Meet overseas players.
+        - link "Beginner Guide Steam, PS5, Epic, And Official Launcher Setup Steam, PS5, Epic, And Official Launcher Setup for Where Winds Meet overseas players." [ref=e36] [cursor=pointer]:
+          - /url: ./articles/steam-ps5-epic-account-setup.html
+          - generic [ref=e37]: Beginner Guide
+          - heading "Steam, PS5, Epic, And Official Launcher Setup" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Steam, PS5, Epic, And Official Launcher Setup for Where Winds Meet overseas players.
+        - link "Beginner Guide First Week Progression Plan First Week Progression Plan for Where Winds Meet overseas players." [ref=e40] [cursor=pointer]:
+          - /url: ./articles/first-week-progression-plan.html
+          - generic [ref=e41]: Beginner Guide
+          - heading "First Week Progression Plan" [level=3] [ref=e42]
+          - paragraph [ref=e43]: First Week Progression Plan for Where Winds Meet overseas players.
+        - link "Beginner Guide Solo Player Onboarding Guide Solo Player Onboarding Guide for Where Winds Meet overseas players." [ref=e44] [cursor=pointer]:
+          - /url: ./articles/solo-player-onboarding.html
+          - generic [ref=e45]: Beginner Guide
+          - heading "Solo Player Onboarding Guide" [level=3] [ref=e46]
+          - paragraph [ref=e47]: Solo Player Onboarding Guide for Where Winds Meet overseas players.
+        - link "Beginner Guide Returning Player Catch-Up Route Returning Player Catch-Up Route for Where Winds Meet overseas players." [ref=e48] [cursor=pointer]:
+          - /url: ./articles/returning-player-catch-up.html
+          - generic [ref=e49]: Beginner Guide
+          - heading "Returning Player Catch-Up Route" [level=3] [ref=e50]
+          - paragraph [ref=e51]: Returning Player Catch-Up Route for Where Winds Meet overseas players.
+        - link "Beginner Guide 45 Minute Casual Routine 45 Minute Casual Routine for Where Winds Meet overseas players." [ref=e52] [cursor=pointer]:
+          - /url: ./articles/casual-45-minute-routine.html
+          - generic [ref=e53]: Beginner Guide
+          - heading "45 Minute Casual Routine" [level=3] [ref=e54]
+          - paragraph [ref=e55]: 45 Minute Casual Routine for Where Winds Meet overseas players.
+        - link "Beginner Guide Two Hour Deep Session Plan Two Hour Deep Session Plan for Where Winds Meet overseas players." [ref=e56] [cursor=pointer]:
+          - /url: ./articles/two-hour-deep-session.html
+          - generic [ref=e57]: Beginner Guide
+          - heading "Two Hour Deep Session Plan" [level=3] [ref=e58]
+          - paragraph [ref=e59]: Two Hour Deep Session Plan for Where Winds Meet overseas players.
+        - link "Beginner Guide Main Quest Or Side Quest Priority Main Quest Or Side Quest Priority for Where Winds Meet overseas players." [ref=e60] [cursor=pointer]:
+          - /url: ./articles/main-quest-vs-side-quest.html
+          - generic [ref=e61]: Beginner Guide
+          - heading "Main Quest Or Side Quest Priority" [level=3] [ref=e62]
+          - paragraph [ref=e63]: Main Quest Or Side Quest Priority for Where Winds Meet overseas players.
+        - link "Beginner Guide Inventory Cleanup Routine Inventory Cleanup Routine for Where Winds Meet overseas players." [ref=e64] [cursor=pointer]:
+          - /url: ./articles/inventory-cleanup-routine.html
+          - generic [ref=e65]: Beginner Guide
+          - heading "Inventory Cleanup Routine" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Inventory Cleanup Routine for Where Winds Meet overseas players.
+        - link "Beginner Guide Controller And Keyboard Setup Controller And Keyboard Setup for Where Winds Meet overseas players." [ref=e68] [cursor=pointer]:
+          - /url: ./articles/controller-keyboard-settings.html
+          - generic [ref=e69]: Beginner Guide
+          - heading "Controller And Keyboard Setup" [level=3] [ref=e70]
+          - paragraph [ref=e71]: Controller And Keyboard Setup for Where Winds Meet overseas players.
+        - link "Beginner Guide Latency Friendly Combat Basics Latency Friendly Combat Basics for Where Winds Meet overseas players." [ref=e72] [cursor=pointer]:
+          - /url: ./articles/latency-friendly-combat.html
+          - generic [ref=e73]: Beginner Guide
+          - heading "Latency Friendly Combat Basics" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Latency Friendly Combat Basics for Where Winds Meet overseas players.
+        - link "Beginner Guide Free To Play Planning Free To Play Planning for Where Winds Meet overseas players." [ref=e76] [cursor=pointer]:
+          - /url: ./articles/free-to-play-planning.html
+          - generic [ref=e77]: Beginner Guide
+          - heading "Free To Play Planning" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Free To Play Planning for Where Winds Meet overseas players.
+        - link "Beginner Guide How To Choose Your First Build How To Choose Your First Build for Where Winds Meet overseas players." [ref=e80] [cursor=pointer]:
+          - /url: ./articles/first-build-choice.html
+          - generic [ref=e81]: Beginner Guide
+          - heading "How To Choose Your First Build" [level=3] [ref=e82]
+          - paragraph [ref=e83]: How To Choose Your First Build for Where Winds Meet overseas players.
+        - link "Beginner Guide English UI Translation Survival Guide English UI Translation Survival Guide for Where Winds Meet overseas players." [ref=e84] [cursor=pointer]:
+          - /url: ./articles/english-ui-translation.html
+          - generic [ref=e85]: Beginner Guide
+          - heading "English UI Translation Survival Guide" [level=3] [ref=e86]
+          - paragraph [ref=e87]: English UI Translation Survival Guide for Where Winds Meet overseas players.
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - paragraph [ref=e90]: Martial Arts Build
+        - heading "Martial Arts Build Articles" [level=2] [ref=e91]
+        - paragraph [ref=e92]: 35 focused guides for this topic.
+      - generic [ref=e93]:
+        - 'link "Martial Arts Build Starter Nameless Sword + Nameless Spear Build Guide English build guide for Starter Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e94] [cursor=pointer]':
+          - /url: ./articles/build-1-starter-nameless-sword-nameless-spear.html
+          - generic [ref=e95]: Martial Arts Build
+          - heading "Starter Nameless Sword + Nameless Spear Build Guide" [level=3] [ref=e96]
+          - paragraph [ref=e97]: "English build guide for Starter Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Nameless Sword + Nameless Spear Build Guide English build guide for Dungeon Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e98] [cursor=pointer]':
+          - /url: ./articles/build-2-dungeon-nameless-sword-nameless-spear.html
+          - generic [ref=e99]: Martial Arts Build
+          - heading "Dungeon Nameless Sword + Nameless Spear Build Guide" [level=3] [ref=e100]
+          - paragraph [ref=e101]: "English build guide for Dungeon Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Nameless Sword + Nameless Spear Build Guide English build guide for PvP Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e102] [cursor=pointer]':
+          - /url: ./articles/build-3-pvp-nameless-sword-nameless-spear.html
+          - generic [ref=e103]: Martial Arts Build
+          - heading "PvP Nameless Sword + Nameless Spear Build Guide" [level=3] [ref=e104]
+          - paragraph [ref=e105]: "English build guide for PvP Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Nameless Sword + Nameless Spear Build Guide English build guide for Farm Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e106] [cursor=pointer]':
+          - /url: ./articles/build-4-farm-nameless-sword-nameless-spear.html
+          - generic [ref=e107]: Martial Arts Build
+          - heading "Farm Nameless Sword + Nameless Spear Build Guide" [level=3] [ref=e108]
+          - paragraph [ref=e109]: "English build guide for Farm Nameless Sword + Nameless Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Strategic Sword + Heavenquaker Spear Build Guide English build guide for Starter Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e110] [cursor=pointer]':
+          - /url: ./articles/build-5-starter-strategic-sword-heavenquaker-spear.html
+          - generic [ref=e111]: Martial Arts Build
+          - heading "Starter Strategic Sword + Heavenquaker Spear Build Guide" [level=3] [ref=e112]
+          - paragraph [ref=e113]: "English build guide for Starter Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Strategic Sword + Heavenquaker Spear Build Guide English build guide for Dungeon Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e114] [cursor=pointer]':
+          - /url: ./articles/build-6-dungeon-strategic-sword-heavenquaker-spear.html
+          - generic [ref=e115]: Martial Arts Build
+          - heading "Dungeon Strategic Sword + Heavenquaker Spear Build Guide" [level=3] [ref=e116]
+          - paragraph [ref=e117]: "English build guide for Dungeon Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Strategic Sword + Heavenquaker Spear Build Guide English build guide for PvP Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e118] [cursor=pointer]':
+          - /url: ./articles/build-7-pvp-strategic-sword-heavenquaker-spear.html
+          - generic [ref=e119]: Martial Arts Build
+          - heading "PvP Strategic Sword + Heavenquaker Spear Build Guide" [level=3] [ref=e120]
+          - paragraph [ref=e121]: "English build guide for PvP Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Strategic Sword + Heavenquaker Spear Build Guide English build guide for Farm Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e122] [cursor=pointer]':
+          - /url: ./articles/build-8-farm-strategic-sword-heavenquaker-spear.html
+          - generic [ref=e123]: Martial Arts Build
+          - heading "Farm Strategic Sword + Heavenquaker Spear Build Guide" [level=3] [ref=e124]
+          - paragraph [ref=e125]: "English build guide for Farm Strategic Sword + Heavenquaker Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Panacea Fan + Soulshade Umbrella Build Guide English build guide for Starter Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e126] [cursor=pointer]':
+          - /url: ./articles/build-9-starter-panacea-fan-soulshade-umbrella.html
+          - generic [ref=e127]: Martial Arts Build
+          - heading "Starter Panacea Fan + Soulshade Umbrella Build Guide" [level=3] [ref=e128]
+          - paragraph [ref=e129]: "English build guide for Starter Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Panacea Fan + Soulshade Umbrella Build Guide English build guide for Dungeon Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e130] [cursor=pointer]':
+          - /url: ./articles/build-10-dungeon-panacea-fan-soulshade-umbrella.html
+          - generic [ref=e131]: Martial Arts Build
+          - heading "Dungeon Panacea Fan + Soulshade Umbrella Build Guide" [level=3] [ref=e132]
+          - paragraph [ref=e133]: "English build guide for Dungeon Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Panacea Fan + Soulshade Umbrella Build Guide English build guide for PvP Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e134] [cursor=pointer]':
+          - /url: ./articles/build-11-pvp-panacea-fan-soulshade-umbrella.html
+          - generic [ref=e135]: Martial Arts Build
+          - heading "PvP Panacea Fan + Soulshade Umbrella Build Guide" [level=3] [ref=e136]
+          - paragraph [ref=e137]: "English build guide for PvP Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Panacea Fan + Soulshade Umbrella Build Guide English build guide for Farm Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e138] [cursor=pointer]':
+          - /url: ./articles/build-12-farm-panacea-fan-soulshade-umbrella.html
+          - generic [ref=e139]: Martial Arts Build
+          - heading "Farm Panacea Fan + Soulshade Umbrella Build Guide" [level=3] [ref=e140]
+          - paragraph [ref=e141]: "English build guide for Farm Panacea Fan + Soulshade Umbrella: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Stormbreaker Spear + Thundercry Blade Build Guide English build guide for Starter Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e142] [cursor=pointer]':
+          - /url: ./articles/build-13-starter-stormbreaker-spear-thundercry-blade.html
+          - generic [ref=e143]: Martial Arts Build
+          - heading "Starter Stormbreaker Spear + Thundercry Blade Build Guide" [level=3] [ref=e144]
+          - paragraph [ref=e145]: "English build guide for Starter Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Stormbreaker Spear + Thundercry Blade Build Guide English build guide for Dungeon Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e146] [cursor=pointer]':
+          - /url: ./articles/build-14-dungeon-stormbreaker-spear-thundercry-blade.html
+          - generic [ref=e147]: Martial Arts Build
+          - heading "Dungeon Stormbreaker Spear + Thundercry Blade Build Guide" [level=3] [ref=e148]
+          - paragraph [ref=e149]: "English build guide for Dungeon Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Stormbreaker Spear + Thundercry Blade Build Guide English build guide for PvP Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e150] [cursor=pointer]':
+          - /url: ./articles/build-15-pvp-stormbreaker-spear-thundercry-blade.html
+          - generic [ref=e151]: Martial Arts Build
+          - heading "PvP Stormbreaker Spear + Thundercry Blade Build Guide" [level=3] [ref=e152]
+          - paragraph [ref=e153]: "English build guide for PvP Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Stormbreaker Spear + Thundercry Blade Build Guide English build guide for Farm Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e154] [cursor=pointer]':
+          - /url: ./articles/build-16-farm-stormbreaker-spear-thundercry-blade.html
+          - generic [ref=e155]: Martial Arts Build
+          - heading "Farm Stormbreaker Spear + Thundercry Blade Build Guide" [level=3] [ref=e156]
+          - paragraph [ref=e157]: "English build guide for Farm Stormbreaker Spear + Thundercry Blade: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Vernal Umbrella + Inkwell Fan Build Guide English build guide for Starter Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e158] [cursor=pointer]':
+          - /url: ./articles/build-17-starter-vernal-umbrella-inkwell-fan.html
+          - generic [ref=e159]: Martial Arts Build
+          - heading "Starter Vernal Umbrella + Inkwell Fan Build Guide" [level=3] [ref=e160]
+          - paragraph [ref=e161]: "English build guide for Starter Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Vernal Umbrella + Inkwell Fan Build Guide English build guide for Dungeon Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e162] [cursor=pointer]':
+          - /url: ./articles/build-18-dungeon-vernal-umbrella-inkwell-fan.html
+          - generic [ref=e163]: Martial Arts Build
+          - heading "Dungeon Vernal Umbrella + Inkwell Fan Build Guide" [level=3] [ref=e164]
+          - paragraph [ref=e165]: "English build guide for Dungeon Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Vernal Umbrella + Inkwell Fan Build Guide English build guide for PvP Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e166] [cursor=pointer]':
+          - /url: ./articles/build-19-pvp-vernal-umbrella-inkwell-fan.html
+          - generic [ref=e167]: Martial Arts Build
+          - heading "PvP Vernal Umbrella + Inkwell Fan Build Guide" [level=3] [ref=e168]
+          - paragraph [ref=e169]: "English build guide for PvP Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Vernal Umbrella + Inkwell Fan Build Guide English build guide for Farm Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e170] [cursor=pointer]':
+          - /url: ./articles/build-20-farm-vernal-umbrella-inkwell-fan.html
+          - generic [ref=e171]: Martial Arts Build
+          - heading "Farm Vernal Umbrella + Inkwell Fan Build Guide" [level=3] [ref=e172]
+          - paragraph [ref=e173]: "English build guide for Farm Vernal Umbrella + Inkwell Fan: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Infernal Twinblades + Mortal Rope Dart Build Guide English build guide for Starter Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e174] [cursor=pointer]':
+          - /url: ./articles/build-21-starter-infernal-twinblades-mortal-rope-dart.html
+          - generic [ref=e175]: Martial Arts Build
+          - heading "Starter Infernal Twinblades + Mortal Rope Dart Build Guide" [level=3] [ref=e176]
+          - paragraph [ref=e177]: "English build guide for Starter Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Infernal Twinblades + Mortal Rope Dart Build Guide English build guide for Dungeon Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e178] [cursor=pointer]':
+          - /url: ./articles/build-22-dungeon-infernal-twinblades-mortal-rope-dart.html
+          - generic [ref=e179]: Martial Arts Build
+          - heading "Dungeon Infernal Twinblades + Mortal Rope Dart Build Guide" [level=3] [ref=e180]
+          - paragraph [ref=e181]: "English build guide for Dungeon Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Infernal Twinblades + Mortal Rope Dart Build Guide English build guide for PvP Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e182] [cursor=pointer]':
+          - /url: ./articles/build-23-pvp-infernal-twinblades-mortal-rope-dart.html
+          - generic [ref=e183]: Martial Arts Build
+          - heading "PvP Infernal Twinblades + Mortal Rope Dart Build Guide" [level=3] [ref=e184]
+          - paragraph [ref=e185]: "English build guide for PvP Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Infernal Twinblades + Mortal Rope Dart Build Guide English build guide for Farm Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e186] [cursor=pointer]':
+          - /url: ./articles/build-24-farm-infernal-twinblades-mortal-rope-dart.html
+          - generic [ref=e187]: Martial Arts Build
+          - heading "Farm Infernal Twinblades + Mortal Rope Dart Build Guide" [level=3] [ref=e188]
+          - paragraph [ref=e189]: "English build guide for Farm Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Bamboocut Dust + Cloud Rope Build Guide English build guide for Starter Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e190] [cursor=pointer]':
+          - /url: ./articles/build-25-starter-bamboocut-dust-cloud-rope.html
+          - generic [ref=e191]: Martial Arts Build
+          - heading "Starter Bamboocut Dust + Cloud Rope Build Guide" [level=3] [ref=e192]
+          - paragraph [ref=e193]: "English build guide for Starter Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Bamboocut Dust + Cloud Rope Build Guide English build guide for Dungeon Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e194] [cursor=pointer]':
+          - /url: ./articles/build-26-dungeon-bamboocut-dust-cloud-rope.html
+          - generic [ref=e195]: Martial Arts Build
+          - heading "Dungeon Bamboocut Dust + Cloud Rope Build Guide" [level=3] [ref=e196]
+          - paragraph [ref=e197]: "English build guide for Dungeon Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Bamboocut Dust + Cloud Rope Build Guide English build guide for PvP Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e198] [cursor=pointer]':
+          - /url: ./articles/build-27-pvp-bamboocut-dust-cloud-rope.html
+          - generic [ref=e199]: Martial Arts Build
+          - heading "PvP Bamboocut Dust + Cloud Rope Build Guide" [level=3] [ref=e200]
+          - paragraph [ref=e201]: "English build guide for PvP Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Bamboocut Dust + Cloud Rope Build Guide English build guide for Farm Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e202] [cursor=pointer]':
+          - /url: ./articles/build-28-farm-bamboocut-dust-cloud-rope.html
+          - generic [ref=e203]: Martial Arts Build
+          - heading "Farm Bamboocut Dust + Cloud Rope Build Guide" [level=3] [ref=e204]
+          - paragraph [ref=e205]: "English build guide for Farm Bamboocut Dust + Cloud Rope: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Bellstrike Umbra + Ten Directions Build Guide English build guide for Starter Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e206] [cursor=pointer]':
+          - /url: ./articles/build-29-starter-bellstrike-umbra-ten-directions.html
+          - generic [ref=e207]: Martial Arts Build
+          - heading "Starter Bellstrike Umbra + Ten Directions Build Guide" [level=3] [ref=e208]
+          - paragraph [ref=e209]: "English build guide for Starter Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Bellstrike Umbra + Ten Directions Build Guide English build guide for Dungeon Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e210] [cursor=pointer]':
+          - /url: ./articles/build-30-dungeon-bellstrike-umbra-ten-directions.html
+          - generic [ref=e211]: Martial Arts Build
+          - heading "Dungeon Bellstrike Umbra + Ten Directions Build Guide" [level=3] [ref=e212]
+          - paragraph [ref=e213]: "English build guide for Dungeon Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Bellstrike Umbra + Ten Directions Build Guide English build guide for PvP Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e214] [cursor=pointer]':
+          - /url: ./articles/build-31-pvp-bellstrike-umbra-ten-directions.html
+          - generic [ref=e215]: Martial Arts Build
+          - heading "PvP Bellstrike Umbra + Ten Directions Build Guide" [level=3] [ref=e216]
+          - paragraph [ref=e217]: "English build guide for PvP Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Farm Bellstrike Umbra + Ten Directions Build Guide English build guide for Farm Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e218] [cursor=pointer]':
+          - /url: ./articles/build-32-farm-bellstrike-umbra-ten-directions.html
+          - generic [ref=e219]: Martial Arts Build
+          - heading "Farm Bellstrike Umbra + Ten Directions Build Guide" [level=3] [ref=e220]
+          - paragraph [ref=e221]: "English build guide for Farm Bellstrike Umbra + Ten Directions: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Starter Snowparting Blade + Phalanx Spear Build Guide English build guide for Starter Snowparting Blade + Phalanx Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e222] [cursor=pointer]':
+          - /url: ./articles/build-33-starter-snowparting-blade-phalanx-spear.html
+          - generic [ref=e223]: Martial Arts Build
+          - heading "Starter Snowparting Blade + Phalanx Spear Build Guide" [level=3] [ref=e224]
+          - paragraph [ref=e225]: "English build guide for Starter Snowparting Blade + Phalanx Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build Dungeon Snowparting Blade + Phalanx Spear Build Guide English build guide for Dungeon Snowparting Blade + Phalanx Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e226] [cursor=pointer]':
+          - /url: ./articles/build-34-dungeon-snowparting-blade-phalanx-spear.html
+          - generic [ref=e227]: Martial Arts Build
+          - heading "Dungeon Snowparting Blade + Phalanx Spear Build Guide" [level=3] [ref=e228]
+          - paragraph [ref=e229]: "English build guide for Dungeon Snowparting Blade + Phalanx Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+        - 'link "Martial Arts Build PvP Snowparting Blade + Phalanx Spear Build Guide English build guide for PvP Snowparting Blade + Phalanx Spear: role, weapons, stat priority, skill loop, replacements, and use cases." [ref=e230] [cursor=pointer]':
+          - /url: ./articles/build-35-pvp-snowparting-blade-phalanx-spear.html
+          - generic [ref=e231]: Martial Arts Build
+          - heading "PvP Snowparting Blade + Phalanx Spear Build Guide" [level=3] [ref=e232]
+          - paragraph [ref=e233]: "English build guide for PvP Snowparting Blade + Phalanx Spear: role, weapons, stat priority, skill loop, replacements, and use cases."
+    - generic [ref=e234]:
+      - generic [ref=e235]:
+        - paragraph [ref=e236]: Map Exploration
+        - heading "Map Exploration Articles" [level=2] [ref=e237]
+        - paragraph [ref=e238]: 18 focused guides for this topic.
+      - generic [ref=e239]:
+        - link "Map Exploration Qinghe Waypoint Route Qinghe Waypoint Route for Where Winds Meet exploration planning." [ref=e240] [cursor=pointer]:
+          - /url: ./articles/qinghe-waypoint-route.html
+          - generic [ref=e241]: Map Exploration
+          - heading "Qinghe Waypoint Route" [level=3] [ref=e242]
+          - paragraph [ref=e243]: Qinghe Waypoint Route for Where Winds Meet exploration planning.
+        - link "Map Exploration Qinghe Collectible Cleanup Plan Qinghe Collectible Cleanup Plan for Where Winds Meet exploration planning." [ref=e244] [cursor=pointer]:
+          - /url: ./articles/qinghe-collectible-cleanup.html
+          - generic [ref=e245]: Map Exploration
+          - heading "Qinghe Collectible Cleanup Plan" [level=3] [ref=e246]
+          - paragraph [ref=e247]: Qinghe Collectible Cleanup Plan for Where Winds Meet exploration planning.
+        - link "Map Exploration Qinghe Hidden Entrance Notes Qinghe Hidden Entrance Notes for Where Winds Meet exploration planning." [ref=e248] [cursor=pointer]:
+          - /url: ./articles/qinghe-hidden-entrances.html
+          - generic [ref=e249]: Map Exploration
+          - heading "Qinghe Hidden Entrance Notes" [level=3] [ref=e250]
+          - paragraph [ref=e251]: Qinghe Hidden Entrance Notes for Where Winds Meet exploration planning.
+        - link "Map Exploration Kaifeng Hub Routine Kaifeng Hub Routine for Where Winds Meet exploration planning." [ref=e252] [cursor=pointer]:
+          - /url: ./articles/kaifeng-hub-routine.html
+          - generic [ref=e253]: Map Exploration
+          - heading "Kaifeng Hub Routine" [level=3] [ref=e254]
+          - paragraph [ref=e255]: Kaifeng Hub Routine for Where Winds Meet exploration planning.
+        - link "Map Exploration Kaifeng Roaring Sands Planning Guide Kaifeng Roaring Sands Planning Guide for Where Winds Meet exploration planning." [ref=e256] [cursor=pointer]:
+          - /url: ./articles/kaifeng-roaring-sands.html
+          - generic [ref=e257]: Map Exploration
+          - heading "Kaifeng Roaring Sands Planning Guide" [level=3] [ref=e258]
+          - paragraph [ref=e259]: Kaifeng Roaring Sands Planning Guide for Where Winds Meet exploration planning.
+        - link "Map Exploration Kaifeng Vendor And Upgrade Loop Kaifeng Vendor And Upgrade Loop for Where Winds Meet exploration planning." [ref=e260] [cursor=pointer]:
+          - /url: ./articles/kaifeng-vendor-loop.html
+          - generic [ref=e261]: Map Exploration
+          - heading "Kaifeng Vendor And Upgrade Loop" [level=3] [ref=e262]
+          - paragraph [ref=e263]: Kaifeng Vendor And Upgrade Loop for Where Winds Meet exploration planning.
+        - link "Map Exploration Hexi Jade Gate Pass Route Hexi Jade Gate Pass Route for Where Winds Meet exploration planning." [ref=e264] [cursor=pointer]:
+          - /url: ./articles/hexi-jade-gate-pass.html
+          - generic [ref=e265]: Map Exploration
+          - heading "Hexi Jade Gate Pass Route" [level=3] [ref=e266]
+          - paragraph [ref=e267]: Hexi Jade Gate Pass Route for Where Winds Meet exploration planning.
+        - link "Map Exploration Hexi Liangzhou Route Hexi Liangzhou Route for Where Winds Meet exploration planning." [ref=e268] [cursor=pointer]:
+          - /url: ./articles/hexi-liangzhou-route.html
+          - generic [ref=e269]: Map Exploration
+          - heading "Hexi Liangzhou Route" [level=3] [ref=e270]
+          - paragraph [ref=e271]: Hexi Liangzhou Route for Where Winds Meet exploration planning.
+        - link "Map Exploration Hexi Qinchuan Preparation Hexi Qinchuan Preparation for Where Winds Meet exploration planning." [ref=e272] [cursor=pointer]:
+          - /url: ./articles/hexi-qinchuan-prep.html
+          - generic [ref=e273]: Map Exploration
+          - heading "Hexi Qinchuan Preparation" [level=3] [ref=e274]
+          - paragraph [ref=e275]: Hexi Qinchuan Preparation for Where Winds Meet exploration planning.
+        - link "Map Exploration Open World Map Priority System Open World Map Priority System for Where Winds Meet exploration planning." [ref=e276] [cursor=pointer]:
+          - /url: ./articles/open-world-map-priority.html
+          - generic [ref=e277]: Map Exploration
+          - heading "Open World Map Priority System" [level=3] [ref=e278]
+          - paragraph [ref=e279]: Open World Map Priority System for Where Winds Meet exploration planning.
+        - link "Map Exploration Why Waypoints Come Before Side Quests Why Waypoints Come Before Side Quests for Where Winds Meet exploration planning." [ref=e280] [cursor=pointer]:
+          - /url: ./articles/waypoint-before-side-quest.html
+          - generic [ref=e281]: Map Exploration
+          - heading "Why Waypoints Come Before Side Quests" [level=3] [ref=e282]
+          - paragraph [ref=e283]: Why Waypoints Come Before Side Quests for Where Winds Meet exploration planning.
+        - link "Map Exploration Resource Cluster Tracking Resource Cluster Tracking for Where Winds Meet exploration planning." [ref=e284] [cursor=pointer]:
+          - /url: ./articles/resource-cluster-tracking.html
+          - generic [ref=e285]: Map Exploration
+          - heading "Resource Cluster Tracking" [level=3] [ref=e286]
+          - paragraph [ref=e287]: Resource Cluster Tracking for Where Winds Meet exploration planning.
+        - link "Map Exploration Boss And Event Portal Notes Boss And Event Portal Notes for Where Winds Meet exploration planning." [ref=e288] [cursor=pointer]:
+          - /url: ./articles/boss-event-portal-notes.html
+          - generic [ref=e289]: Map Exploration
+          - heading "Boss And Event Portal Notes" [level=3] [ref=e290]
+          - paragraph [ref=e291]: Boss And Event Portal Notes for Where Winds Meet exploration planning.
+        - link "Map Exploration Map Notes For Returning Players Map Notes For Returning Players for Where Winds Meet exploration planning." [ref=e292] [cursor=pointer]:
+          - /url: ./articles/map-notes-for-returning-players.html
+          - generic [ref=e293]: Map Exploration
+          - heading "Map Notes For Returning Players" [level=3] [ref=e294]
+          - paragraph [ref=e295]: Map Notes For Returning Players for Where Winds Meet exploration planning.
+        - link "Map Exploration Short Session Exploration Route Short Session Exploration Route for Where Winds Meet exploration planning." [ref=e296] [cursor=pointer]:
+          - /url: ./articles/exploration-short-session.html
+          - generic [ref=e297]: Map Exploration
+          - heading "Short Session Exploration Route" [level=3] [ref=e298]
+          - paragraph [ref=e299]: Short Session Exploration Route for Where Winds Meet exploration planning.
+        - link "Map Exploration Completionist Map Cleanup Completionist Map Cleanup for Where Winds Meet exploration planning." [ref=e300] [cursor=pointer]:
+          - /url: ./articles/completionist-map-cleanup.html
+          - generic [ref=e301]: Map Exploration
+          - heading "Completionist Map Cleanup" [level=3] [ref=e302]
+          - paragraph [ref=e303]: Completionist Map Cleanup for Where Winds Meet exploration planning.
+        - link "Map Exploration Mobile Map Routine Mobile Map Routine for Where Winds Meet exploration planning." [ref=e304] [cursor=pointer]:
+          - /url: ./articles/mobile-map-routine.html
+          - generic [ref=e305]: Map Exploration
+          - heading "Mobile Map Routine" [level=3] [ref=e306]
+          - paragraph [ref=e307]: Mobile Map Routine for Where Winds Meet exploration planning.
+        - link "Map Exploration How To Verify Map Information How To Verify Map Information for Where Winds Meet exploration planning." [ref=e308] [cursor=pointer]:
+          - /url: ./articles/map-source-checking.html
+          - generic [ref=e309]: Map Exploration
+          - heading "How To Verify Map Information" [level=3] [ref=e310]
+          - paragraph [ref=e311]: How To Verify Map Information for Where Winds Meet exploration planning.
+    - generic [ref=e312]:
+      - generic [ref=e313]:
+        - paragraph [ref=e314]: Daily Routine
+        - heading "Daily Routine Articles" [level=2] [ref=e315]
+        - paragraph [ref=e316]: 10 focused guides for this topic.
+      - generic [ref=e317]:
+        - link "Daily Routine Daily Reset Checklist Daily Reset Checklist for Where Winds Meet overseas players." [ref=e318] [cursor=pointer]:
+          - /url: ./articles/daily-reset-checklist.html
+          - generic [ref=e319]: Daily Routine
+          - heading "Daily Reset Checklist" [level=3] [ref=e320]
+          - paragraph [ref=e321]: Daily Reset Checklist for Where Winds Meet overseas players.
+        - link "Daily Routine Weekly Reset Plan Weekly Reset Plan for Where Winds Meet overseas players." [ref=e322] [cursor=pointer]:
+          - /url: ./articles/weekly-reset-plan.html
+          - generic [ref=e323]: Daily Routine
+          - heading "Weekly Reset Plan" [level=3] [ref=e324]
+          - paragraph [ref=e325]: Weekly Reset Plan for Where Winds Meet overseas players.
+        - link "Daily Routine Stamina Spending Priority Stamina Spending Priority for Where Winds Meet overseas players." [ref=e326] [cursor=pointer]:
+          - /url: ./articles/stamina-spending-priority.html
+          - generic [ref=e327]: Daily Routine
+          - heading "Stamina Spending Priority" [level=3] [ref=e328]
+          - paragraph [ref=e329]: Stamina Spending Priority for Where Winds Meet overseas players.
+        - link "Daily Routine Mail Reward Habit Mail Reward Habit for Where Winds Meet overseas players." [ref=e330] [cursor=pointer]:
+          - /url: ./articles/mail-reward-habit.html
+          - generic [ref=e331]: Daily Routine
+          - heading "Mail Reward Habit" [level=3] [ref=e332]
+          - paragraph [ref=e333]: Mail Reward Habit for Where Winds Meet overseas players.
+        - link "Daily Routine Dungeon Material Routine Dungeon Material Routine for Where Winds Meet overseas players." [ref=e334] [cursor=pointer]:
+          - /url: ./articles/dungeon-material-routine.html
+          - generic [ref=e335]: Daily Routine
+          - heading "Dungeon Material Routine" [level=3] [ref=e336]
+          - paragraph [ref=e337]: Dungeon Material Routine for Where Winds Meet overseas players.
+        - link "Daily Routine Guild Check-In Routine Guild Check-In Routine for Where Winds Meet overseas players." [ref=e338] [cursor=pointer]:
+          - /url: ./articles/guild-check-in-routine.html
+          - generic [ref=e339]: Daily Routine
+          - heading "Guild Check-In Routine" [level=3] [ref=e340]
+          - paragraph [ref=e341]: Guild Check-In Routine for Where Winds Meet overseas players.
+        - link "Daily Routine PvP Weekly Routine PvP Weekly Routine for Where Winds Meet overseas players." [ref=e342] [cursor=pointer]:
+          - /url: ./articles/pvp-weekly-routine.html
+          - generic [ref=e343]: Daily Routine
+          - heading "PvP Weekly Routine" [level=3] [ref=e344]
+          - paragraph [ref=e345]: PvP Weekly Routine for Where Winds Meet overseas players.
+        - link "Daily Routine Inventory After Daily Cleanup Inventory After Daily Cleanup for Where Winds Meet overseas players." [ref=e346] [cursor=pointer]:
+          - /url: ./articles/inventory-after-daily.html
+          - generic [ref=e347]: Daily Routine
+          - heading "Inventory After Daily Cleanup" [level=3] [ref=e348]
+          - paragraph [ref=e349]: Inventory After Daily Cleanup for Where Winds Meet overseas players.
+        - link "Daily Routine Event Window Tracking Event Window Tracking for Where Winds Meet overseas players." [ref=e350] [cursor=pointer]:
+          - /url: ./articles/event-window-tracking.html
+          - generic [ref=e351]: Daily Routine
+          - heading "Event Window Tracking" [level=3] [ref=e352]
+          - paragraph [ref=e353]: Event Window Tracking for Where Winds Meet overseas players.
+        - link "Daily Routine Low Energy Session Plan Low Energy Session Plan for Where Winds Meet overseas players." [ref=e354] [cursor=pointer]:
+          - /url: ./articles/low-energy-session.html
+          - generic [ref=e355]: Daily Routine
+          - heading "Low Energy Session Plan" [level=3] [ref=e356]
+          - paragraph [ref=e357]: Low Energy Session Plan for Where Winds Meet overseas players.
+    - generic [ref=e358]:
+      - generic [ref=e359]:
+        - paragraph [ref=e360]: Systems And Terms
+        - heading "Systems And Terms Articles" [level=2] [ref=e361]
+        - paragraph [ref=e362]: 12 focused guides for this topic.
+      - generic [ref=e363]:
+        - link "Systems And Terms Qinggong Explained Qinggong explained for Where Winds Meet overseas players." [ref=e364] [cursor=pointer]:
+          - /url: ./articles/system-qinggong.html
+          - generic [ref=e365]: Systems And Terms
+          - heading "Qinggong Explained" [level=3] [ref=e366]
+          - paragraph [ref=e367]: Qinggong explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Martial Arts Explained Martial Arts explained for Where Winds Meet overseas players." [ref=e368] [cursor=pointer]:
+          - /url: ./articles/system-martial-arts.html
+          - generic [ref=e369]: Systems And Terms
+          - heading "Martial Arts Explained" [level=3] [ref=e370]
+          - paragraph [ref=e371]: Martial Arts explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Heart Method Explained Heart Method explained for Where Winds Meet overseas players." [ref=e372] [cursor=pointer]:
+          - /url: ./articles/system-heart-method.html
+          - generic [ref=e373]: Systems And Terms
+          - heading "Heart Method Explained" [level=3] [ref=e374]
+          - paragraph [ref=e375]: Heart Method explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Meridian Explained Meridian explained for Where Winds Meet overseas players." [ref=e376] [cursor=pointer]:
+          - /url: ./articles/system-meridian.html
+          - generic [ref=e377]: Systems And Terms
+          - heading "Meridian Explained" [level=3] [ref=e378]
+          - paragraph [ref=e379]: Meridian explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Sect Explained Sect explained for Where Winds Meet overseas players." [ref=e380] [cursor=pointer]:
+          - /url: ./articles/system-sect.html
+          - generic [ref=e381]: Systems And Terms
+          - heading "Sect Explained" [level=3] [ref=e382]
+          - paragraph [ref=e383]: Sect explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Jianghu Explained Jianghu explained for Where Winds Meet overseas players." [ref=e384] [cursor=pointer]:
+          - /url: ./articles/system-jianghu.html
+          - generic [ref=e385]: Systems And Terms
+          - heading "Jianghu Explained" [level=3] [ref=e386]
+          - paragraph [ref=e387]: Jianghu explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Daily Quest Explained Daily Quest explained for Where Winds Meet overseas players." [ref=e388] [cursor=pointer]:
+          - /url: ./articles/system-daily-quest.html
+          - generic [ref=e389]: Systems And Terms
+          - heading "Daily Quest Explained" [level=3] [ref=e390]
+          - paragraph [ref=e391]: Daily Quest explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Main Quest Explained Main Quest explained for Where Winds Meet overseas players." [ref=e392] [cursor=pointer]:
+          - /url: ./articles/system-main-quest.html
+          - generic [ref=e393]: Systems And Terms
+          - heading "Main Quest Explained" [level=3] [ref=e394]
+          - paragraph [ref=e395]: Main Quest explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Waypoint Explained Waypoint explained for Where Winds Meet overseas players." [ref=e396] [cursor=pointer]:
+          - /url: ./articles/system-waypoint.html
+          - generic [ref=e397]: Systems And Terms
+          - heading "Waypoint Explained" [level=3] [ref=e398]
+          - paragraph [ref=e399]: Waypoint explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Stamina Explained Stamina explained for Where Winds Meet overseas players." [ref=e400] [cursor=pointer]:
+          - /url: ./articles/system-stamina.html
+          - generic [ref=e401]: Systems And Terms
+          - heading "Stamina Explained" [level=3] [ref=e402]
+          - paragraph [ref=e403]: Stamina explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Cultivation Explained Cultivation explained for Where Winds Meet overseas players." [ref=e404] [cursor=pointer]:
+          - /url: ./articles/system-cultivation.html
+          - generic [ref=e405]: Systems And Terms
+          - heading "Cultivation Explained" [level=3] [ref=e406]
+          - paragraph [ref=e407]: Cultivation explained for Where Winds Meet overseas players.
+        - link "Systems And Terms Inner Force Explained Inner Force explained for Where Winds Meet overseas players." [ref=e408] [cursor=pointer]:
+          - /url: ./articles/system-inner-force.html
+          - generic [ref=e409]: Systems And Terms
+          - heading "Inner Force Explained" [level=3] [ref=e410]
+          - paragraph [ref=e411]: Inner Force explained for Where Winds Meet overseas players.
+    - generic [ref=e412]:
+      - generic [ref=e413]:
+        - paragraph [ref=e414]: Troubleshooting
+        - heading "Troubleshooting Articles" [level=2] [ref=e415]
+        - paragraph [ref=e416]: 8 focused guides for this topic.
+      - generic [ref=e417]:
+        - 'link "Troubleshooting Game won''t launch or stuck on loading screen Fix Guide Troubleshooting guide for: Game won''t launch or stuck on loading screen." [ref=e418] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-game-won-t-launch-or-stuck-on-loading-screen.html
+          - generic [ref=e419]: Troubleshooting
+          - heading "Game won't launch or stuck on loading screen Fix Guide" [level=3] [ref=e420]
+          - paragraph [ref=e421]: "Troubleshooting guide for: Game won't launch or stuck on loading screen."
+        - 'link "Troubleshooting How much disk space do I need? Fix Guide Troubleshooting guide for: How much disk space do I need?." [ref=e422] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-how-much-disk-space-do-i-need.html
+          - generic [ref=e423]: Troubleshooting
+          - heading "How much disk space do I need? Fix Guide" [level=3] [ref=e424]
+          - paragraph [ref=e425]: "Troubleshooting guide for: How much disk space do I need?."
+        - 'link "Troubleshooting Game is laggy or has low FPS Fix Guide Troubleshooting guide for: Game is laggy or has low FPS." [ref=e426] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-game-is-laggy-or-has-low-fps.html
+          - generic [ref=e427]: Troubleshooting
+          - heading "Game is laggy or has low FPS Fix Guide" [level=3] [ref=e428]
+          - paragraph [ref=e429]: "Troubleshooting guide for: Game is laggy or has low FPS."
+        - 'link "Troubleshooting Crashes during gameplay Fix Guide Troubleshooting guide for: Crashes during gameplay." [ref=e430] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-crashes-during-gameplay.html
+          - generic [ref=e431]: Troubleshooting
+          - heading "Crashes during gameplay Fix Guide" [level=3] [ref=e432]
+          - paragraph [ref=e433]: "Troubleshooting guide for: Crashes during gameplay."
+        - 'link "Troubleshooting Can''t connect to server Fix Guide Troubleshooting guide for: Can''t connect to server." [ref=e434] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-can-t-connect-to-server.html
+          - generic [ref=e435]: Troubleshooting
+          - heading "Can't connect to server Fix Guide" [level=3] [ref=e436]
+          - paragraph [ref=e437]: "Troubleshooting guide for: Can't connect to server."
+        - 'link "Troubleshooting Which martial art should I choose as beginner? Fix Guide Troubleshooting guide for: Which martial art should I choose as beginner?." [ref=e438] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-which-martial-art-should-i-choose-as-beginner.html
+          - generic [ref=e439]: Troubleshooting
+          - heading "Which martial art should I choose as beginner? Fix Guide" [level=3] [ref=e440]
+          - paragraph [ref=e441]: "Troubleshooting guide for: Which martial art should I choose as beginner?."
+        - 'link "Troubleshooting How do I unlock new martial arts? Fix Guide Troubleshooting guide for: How do I unlock new martial arts?." [ref=e442] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-how-do-i-unlock-new-martial-arts.html
+          - generic [ref=e443]: Troubleshooting
+          - heading "How do I unlock new martial arts? Fix Guide" [level=3] [ref=e444]
+          - paragraph [ref=e445]: "Troubleshooting guide for: How do I unlock new martial arts?."
+        - 'link "Troubleshooting Mobile version issues Fix Guide Troubleshooting guide for: Mobile version issues." [ref=e446] [cursor=pointer]':
+          - /url: ./articles/troubleshooting-mobile-version-issues.html
+          - generic [ref=e447]: Troubleshooting
+          - heading "Mobile version issues Fix Guide" [level=3] [ref=e448]
+          - paragraph [ref=e449]: "Troubleshooting guide for: Mobile version issues."
+    - generic [ref=e450]:
+      - generic [ref=e451]:
+        - paragraph [ref=e452]: Updates And Release
+        - heading "Updates And Release Articles" [level=2] [ref=e453]
+        - paragraph [ref=e454]: 2 focused guides for this topic.
+      - generic [ref=e455]:
+        - link "Updates And Release Global Launch Notes For Overseas Players Global Launch Notes For Overseas Players for Where Winds Meet overseas players." [ref=e456] [cursor=pointer]:
+          - /url: ./articles/global-launch-overseas-notes.html
+          - generic [ref=e457]: Updates And Release
+          - heading "Global Launch Notes For Overseas Players" [level=3] [ref=e458]
+          - paragraph [ref=e459]: Global Launch Notes For Overseas Players for Where Winds Meet overseas players.
+        - link "Updates And Release Mobile Version Preparation Guide Mobile Version Preparation Guide for Where Winds Meet overseas players." [ref=e460] [cursor=pointer]:
+          - /url: ./articles/mobile-version-prep.html
+          - generic [ref=e461]: Updates And Release
+          - heading "Mobile Version Preparation Guide" [level=3] [ref=e462]
+          - paragraph [ref=e463]: Mobile Version Preparation Guide for Where Winds Meet overseas players.
+  - contentinfo [ref=e464]:
+    - generic [ref=e465]: Where Winds Meet - Overseas Guide
+    - link "Back Home" [ref=e466] [cursor=pointer]:
+      - /url: ./index.html

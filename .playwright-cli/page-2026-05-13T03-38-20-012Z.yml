@@ -1,0 +1,115 @@
+- generic [ref=e2]:
+  - banner "Main navigation" [ref=e3]:
+    - link "风 Overseas Guide Where Winds Meet" [ref=e4] [cursor=pointer]:
+      - /url: ./index.html
+      - generic [ref=e5]: 风
+      - generic [ref=e6]:
+        - strong [ref=e7]: Overseas Guide
+        - generic [ref=e8]: Where Winds Meet
+    - navigation "Site pages" [ref=e9]:
+      - link "Home" [ref=e10] [cursor=pointer]:
+        - /url: ./index.html
+      - link "Builds" [ref=e11] [cursor=pointer]:
+        - /url: ./builds.html
+      - link "Map" [ref=e12] [cursor=pointer]:
+        - /url: ./map.html
+      - link "Articles" [ref=e13] [cursor=pointer]:
+        - /url: ./articles.html
+      - link "Updates" [ref=e14] [cursor=pointer]:
+        - /url: ./updates.html
+      - link "FAQ" [ref=e15] [cursor=pointer]:
+        - /url: ./faq.html
+      - link "Terms" [ref=e16] [cursor=pointer]:
+        - /url: ./terminology.html
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - paragraph [ref=e19]: Map Exploration
+      - heading "Waypoints, Collectibles, Hidden Entrances" [level=1] [ref=e20]
+      - paragraph [ref=e21]: This page turns the previous map popup into a crawlable exploration plan. Use it to decide which region to clear first and what to record for future updates.
+    - generic [ref=e22]:
+      - article [ref=e23]:
+        - img "Where Winds Meet official open world art" [ref=e24]
+        - generic [ref=e25]:
+          - paragraph [ref=e26]: Exploration Principle
+          - heading "Mark Routes, Not Just Places" [level=2] [ref=e27]
+          - paragraph [ref=e28]: "For a live open-world wuxia game, a useful map guide is a route system: waypoint first, nearby rewards second, bosses and event portals third, full cleanup last."
+          - 'link "Source: Steam official store page, image saved locally" [ref=e29] [cursor=pointer]':
+            - /url: https://store.steampowered.com/app/3564740/Where_Winds_Meet/
+      - article [ref=e30]:
+        - generic "Map route planning board" [ref=e31]:
+          - generic [ref=e32]: "1"
+          - generic [ref=e33]: "2"
+          - generic [ref=e34]: "3"
+          - generic [ref=e35]: "4"
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: Route Board
+          - heading "Short Session First, Cleanup Later" [level=2] [ref=e38]
+          - paragraph [ref=e39]: Each region now carries a time estimate, reward type, route theme, and risk label. That makes the map page usable for overseas players who only have 20 minutes, not just completionists with a whole evening.
+          - list [ref=e40]:
+            - listitem [ref=e41]: Unlock fast travel.
+            - listitem [ref=e42]: Collect nearby rewards.
+            - listitem [ref=e43]: Mark boss or event entries.
+            - listitem [ref=e44]: Save hidden/puzzle cleanup for later.
+      - article [ref=e45]:
+        - heading "Qinghe" [level=2] [ref=e46]
+        - paragraph [ref=e47]: Starter region for first route planning, early waypoints, and low-pressure encounters.
+        - list [ref=e48]:
+          - listitem [ref=e49]: Unlock nearby waypoints before side quests.
+          - listitem [ref=e50]: Mark short encounters for fragmented sessions.
+          - listitem [ref=e51]: Track chests near teleport points before long detours.
+          - listitem [ref=e52]: Use hidden entrances as optional notes until verified.
+      - article [ref=e53]:
+        - heading "Kaifeng" [level=2] [ref=e54]
+        - paragraph [ref=e55]: Main hub for vendors, social systems, dense quest errands, and maintenance loops.
+        - list [ref=e56]:
+          - listitem [ref=e57]: Separate story errands from daily routine tasks.
+          - listitem [ref=e58]: Record repeatable vendor stops and upgrade locations.
+          - listitem [ref=e59]: Use hub visits to clean inventory.
+          - listitem [ref=e60]: Keep controller, login, and performance notes close to hub workflows.
+      - article [ref=e61]:
+        - heading "Hexi" [level=2] [ref=e62]
+        - paragraph [ref=e63]: Expansion route covering Jade Gate Pass, Liangzhou, and Qinchuan update trail.
+        - list [ref=e64]:
+          - listitem [ref=e65]: Start with main chapter unlocks.
+          - listitem [ref=e66]: Track bosses and event entries separately.
+          - listitem [ref=e67]: Update daily checklist when limited-time activities appear.
+          - listitem [ref=e68]: Keep source links beside expansion notes.
+    - generic [ref=e69]:
+      - article [ref=e70]:
+        - heading "Route Tags To Add" [level=2] [ref=e71]
+        - paragraph [ref=e72]: "Each map note should carry a route tag: waypoint, resource, boss, event, hidden entrance, puzzle, vendor, or return later. This keeps future updates from becoming a pile of loose notes."
+      - article [ref=e73]:
+        - heading "Patch-Sensitive Notes" [level=2] [ref=e74]
+        - paragraph [ref=e75]: Expansion areas such as Jade Gate Pass, Liangzhou, and Qinchuan should keep source links beside the note because event entrances and priorities may move after updates.
+      - article [ref=e76]:
+        - heading "Next Reading" [level=2] [ref=e77]
+        - paragraph [ref=e78]: The article library includes 18 map and route pages for Qinghe, Kaifeng, Hexi, waypoints, resource clusters, and completion cleanup.
+        - link "Browse Map Articles" [ref=e79] [cursor=pointer]:
+          - /url: ./articles.html
+    - table [ref=e81]:
+      - rowgroup [ref=e82]:
+        - row "Priority What To Mark Why It Matters" [ref=e83]:
+          - columnheader "Priority" [ref=e84]
+          - columnheader "What To Mark" [ref=e85]
+          - columnheader "Why It Matters" [ref=e86]
+      - rowgroup [ref=e87]:
+        - row "1 Waypoints and fast travel nodes They reduce route friction and make daily loops faster." [ref=e88]:
+          - cell "1" [ref=e89]
+          - cell "Waypoints and fast travel nodes" [ref=e90]
+          - cell "They reduce route friction and make daily loops faster." [ref=e91]
+        - row "2 Resource clusters and chest groups They help players plan short farming sessions." [ref=e92]:
+          - cell "2" [ref=e93]
+          - cell "Resource clusters and chest groups" [ref=e94]
+          - cell "They help players plan short farming sessions." [ref=e95]
+        - row "3 Bosses, elite encounters, and event portals They change build and daily priorities." [ref=e96]:
+          - cell "3" [ref=e97]
+          - cell "Bosses, elite encounters, and event portals" [ref=e98]
+          - cell "They change build and daily priorities." [ref=e99]
+        - row "4 Hidden entrances and puzzle starts They are valuable, but only after base mobility is unlocked." [ref=e100]:
+          - cell "4" [ref=e101]
+          - cell "Hidden entrances and puzzle starts" [ref=e102]
+          - cell "They are valuable, but only after base mobility is unlocked." [ref=e103]
+  - contentinfo [ref=e104]:
+    - generic [ref=e105]: Where Winds Meet - Overseas Guide
+    - link "Back Home" [ref=e106] [cursor=pointer]:
+      - /url: ./index.html

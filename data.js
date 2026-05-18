@@ -16,10 +16,10 @@ const buildPairs = [
 ];
 
 const buildPlans = [
-  { label: "Starter", roleSuffix: "Training", tierShift: 0, pve: 0, pvp: -1, difficultyShift: -1, description: "Beginner-friendly route that keeps the core weapon pair intact while lowering execution risk.", rotation: ["Open with safe ranged or poke skill", "Use primary weapon for steady damage", "Swap only after dodge or break window", "Spend burst when boss recovery is visible"], alternatives: ["Use HP main stat if survival is shaky", "Replace rare heart methods with any ATK or DEF option", "Prioritize easy-to-upgrade weapons"], scenarios: ["First week progression", "Solo story", "Learning boss patterns"] },
-  { label: "Dungeon", roleSuffix: "PvE", tierShift: 0, pve: 1, pvp: 0, difficultyShift: 0, description: "Dungeon route tuned for stable damage windows, resource efficiency, and repeatable boss clears.", rotation: ["Pre-buff before contact", "Build resource on primary weapon", "Swap for break or crowd-control window", "Use burst after teammate setup"], alternatives: ["Carry one defensive accessory", "Swap pure crit for precision on evasive bosses", "Use team utility heart methods if solo damage is covered"], scenarios: ["Dungeons", "Weekly bosses", "Material farming"] },
-  { label: "PvP", roleSuffix: "Duel", tierShift: -1, pve: -1, pvp: 1, difficultyShift: 1, description: "PvP route focused on mobility, punish timing, and short confirmed damage windows.", rotation: ["Test spacing with low-commitment poke", "Hold mobility until enemy commit", "Punish whiff with secondary weapon", "Disengage before stamina is empty"], alternatives: ["Trade some ATK for HP", "Use control resistance where available", "Prefer shorter cooldown options"], scenarios: ["Duel", "Small-scale PvP", "Counter-pick practice"] },
-  { label: "Farm", roleSuffix: "Resource", tierShift: -1, pve: 0, pvp: -1, difficultyShift: -1, description: "Low-maintenance route for daily farming, open-world errands, and fragmented play sessions.", rotation: ["Group minor enemies first", "Use area skill to clean up", "Reserve mobility for travel", "Heal or reset before the next pack"], alternatives: ["Use movement speed or stamina comfort pieces", "Pick low-cost weapon upgrades", "Favor broad utility over peak damage"], scenarios: ["Daily checklist", "Open-world farming", "Short sessions"] }
+  { label: "Starter", roleSuffix: "Training", tierShift: 0, pve: 0, pvp: -1, difficultyShift: -1, description: "Beginner-friendly route that keeps the core weapon pair intact while lowering execution risk.", rotation: ["Open with safe ranged or poke skill", "Use primary weapon for steady damage", "Swap only after dodge or break window", "Spend burst when boss recovery is visible"], alternatives: ["Use HP main stat if survival is shaky", "Replace rare heart methods with any ATK or DEF option", "Prioritize easy-to-upgrade weapons"], scenarios: ["First week progression", "Solo story", "Learning boss patterns"], fit: "You want a low-risk route while learning inputs.", avoid: "You already need strict burst windows for ranked play." },
+  { label: "Dungeon", roleSuffix: "PvE", tierShift: 0, pve: 1, pvp: 0, difficultyShift: 0, description: "Dungeon route tuned for stable damage windows, resource efficiency, and repeatable boss clears.", rotation: ["Pre-buff before contact", "Build resource on primary weapon", "Swap for break or crowd-control window", "Use burst after teammate setup"], alternatives: ["Carry one defensive accessory", "Swap pure crit for precision on evasive bosses", "Use team utility heart methods if solo damage is covered"], scenarios: ["Dungeons", "Weekly bosses", "Material farming"], fit: "You repeat bosses and want predictable clear windows.", avoid: "You mostly play short errands or duel practice." },
+  { label: "PvP", roleSuffix: "Duel", tierShift: -1, pve: -1, pvp: 1, difficultyShift: 1, description: "PvP route focused on mobility, punish timing, and short confirmed damage windows.", rotation: ["Test spacing with low-commitment poke", "Hold mobility until enemy commit", "Punish whiff with secondary weapon", "Disengage before stamina is empty"], alternatives: ["Trade some ATK for HP", "Use control resistance where available", "Prefer shorter cooldown options"], scenarios: ["Duel", "Small-scale PvP", "Counter-pick practice"], fit: "You enjoy spacing tests, baiting, and confirmed punishes.", avoid: "You need a calm farming loop after work." },
+  { label: "Farm", roleSuffix: "Resource", tierShift: -1, pve: 0, pvp: -1, difficultyShift: -1, description: "Low-maintenance route for daily farming, open-world errands, and fragmented play sessions.", rotation: ["Group minor enemies first", "Use area skill to clean up", "Reserve mobility for travel", "Heal or reset before the next pack"], alternatives: ["Use movement speed or stamina comfort pieces", "Pick low-cost weapon upgrades", "Favor broad utility over peak damage"], scenarios: ["Daily checklist", "Open-world farming", "Short sessions"], fit: "You want route speed and low attention cost.", avoid: "You are optimizing hard bosses or serious PvP." }
 ];
 
 const difficultyOrder = ["Beginner", "Easy", "Intermediate", "Advanced", "Hard"];
@@ -149,6 +149,8 @@ const buildsData = buildPairs.flatMap((pair, pairIndex) =>
     rotation: plan.rotation,
     alternatives: plan.alternatives,
     scenarios: plan.scenarios,
+    fit: plan.fit,
+    avoid: plan.avoid,
     combatProfile: buildCombatProfile(pair, plan),
     tags: [plan.label, pair.role, ...pair.weapons],
   }))
@@ -271,6 +273,9 @@ const mapData = [
     time: "25-45 min",
     rewardType: "Waypoints + early chests",
     risk: "Low",
+    confidence: "Stable starter notes",
+    shortRoute: "Unlock two waypoints, sweep nearby chests, stop before long detours.",
+    longRoute: "Add hidden notes, river resources, and return-hub cleanup after the first sweep.",
     routeTheme: "onboarding loop",
     checkpoints: ["Unlock nearby waypoints before side quests", "Mark short encounters for fragmented play sessions", "Keep material runs close to teleport points"],
     tip: "Use this as the low-pressure onboarding region before chasing completion.",
@@ -289,6 +294,9 @@ const mapData = [
     time: "15-30 min",
     rewardType: "Vendors + upgrades",
     risk: "Low",
+    confidence: "Hub workflow, verify vendor names after patches",
+    shortRoute: "Do vendors, guild stop, inventory cleanup, then leave.",
+    longRoute: "Chain story errands with upgrade checks and account maintenance.",
     routeTheme: "maintenance loop",
     checkpoints: ["Record repeatable vendor stops", "Separate story errands from daily routine tasks", "Use hub visits to clean inventory and upgrade gear"],
     tip: "Treat Kaifeng as a maintenance stop, not a place to wander without a plan.",
@@ -307,6 +315,9 @@ const mapData = [
     time: "45-90 min",
     rewardType: "Bosses + event entries",
     risk: "Medium",
+    confidence: "Patch-sensitive expansion notes",
+    shortRoute: "Unlock the pass, mark boss/event entries, skip cleanup.",
+    longRoute: "Run boss notes, event checks, and Qinchuan prep in one sweep.",
     routeTheme: "expansion sweep",
     checkpoints: ["Start with main chapter unlocks", "Track bosses and event entries separately", "Update daily checklist when limited-time activities appear"],
     tip: "Expansion zones age fast; keep source links beside each update.",

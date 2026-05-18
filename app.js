@@ -257,6 +257,24 @@ function renderScoreBar(label, value) {
   `;
 }
 
+function renderStatFocus(stats) {
+  return stats.map((stat, index) => {
+    const score = Math.max(44, 92 - index * 16);
+    return `
+      <div class="stat-focus-row" style="--score:${score}%">
+        <span>${stat}</span>
+        <i aria-hidden="true"></i>
+      </div>
+    `;
+  }).join("");
+}
+
+function renderComboTrack(rotation) {
+  return rotation.slice(0, 4).map((step, index) => `
+    <span><strong>${index + 1}</strong>${step}</span>
+  `).join("");
+}
+
 function renderBuilds(builds) {
   buildsList.innerHTML = builds.map(build => `
     <div class="build-card tier-${build.tier} build-style-${build.combatProfile.visualClass}">
@@ -271,6 +289,9 @@ function renderBuilds(builds) {
         <span class="build-tier">${build.tier}</span>
       </div>
       <p class="build-name-zh">${build.nameZh}</p>
+      <div class="weapon-tags" aria-label="Weapon pair">
+        ${build.weapons.map(weapon => `<span>${weapon}</span>`).join("")}
+      </div>
       <label class="compare-toggle">
         <input type="checkbox" data-compare-id="${build.id}" ${selectedBuildIds.has(String(build.id)) ? "checked" : ""} />
         Compare
@@ -289,6 +310,16 @@ function renderBuilds(builds) {
         <div><span>Opener</span><strong>${build.combatProfile.opener}</strong></div>
         <div><span>Key Window</span><strong>${build.combatProfile.keyWindow}</strong></div>
         <div><span>Pressure</span><strong>${build.combatProfile.pressure}</strong></div>
+      </div>
+      <div class="build-fit-grid">
+        <div><span>Best When</span><strong>${build.fit}</strong></div>
+        <div><span>Avoid If</span><strong>${build.avoid}</strong></div>
+      </div>
+      <div class="combo-track" aria-label="Visible combo phases">
+        ${renderComboTrack(build.rotation)}
+      </div>
+      <div class="stat-focus" aria-label="Stat focus bars">
+        ${renderStatFocus(build.statPriority)}
       </div>
       <div class="build-details">
         <p><strong>Role:</strong> ${build.role}</p>
@@ -382,10 +413,14 @@ function renderComparePanel() {
         <tbody>
           <tr><td>Tier</td>${selected.map(build => `<td>${build.tier}</td>`).join("")}</tr>
           <tr><td>Role</td>${selected.map(build => `<td>${build.role}</td>`).join("")}</tr>
+          <tr><td>Rhythm</td>${selected.map(build => `<td>${build.combatProfile.rhythm}</td>`).join("")}</tr>
+          <tr><td>Opener</td>${selected.map(build => `<td>${build.combatProfile.opener}</td>`).join("")}</tr>
+          <tr><td>Key Window</td>${selected.map(build => `<td>${build.combatProfile.keyWindow}</td>`).join("")}</tr>
           <tr><td>Weapons</td>${selected.map(build => `<td>${build.weapons.join(" + ")}</td>`).join("")}</tr>
           <tr><td>PvE / PvP</td>${selected.map(build => `<td>${build.pve}/10 / ${build.pvp}/10</td>`).join("")}</tr>
           <tr><td>Stats</td>${selected.map(build => `<td>${build.stats}</td>`).join("")}</tr>
           <tr><td>Core Loop</td>${selected.map(build => `<td>${build.rotation.slice(0, 2).join(" → ")}</td>`).join("")}</tr>
+          <tr><td>Failure Signal</td>${selected.map(build => `<td>${build.combatProfile.failSignal}</td>`).join("")}</tr>
           <tr><td>Scenarios</td>${selected.map(build => `<td>${build.scenarios.join(", ")}</td>`).join("")}</tr>
         </tbody>
       </table>
@@ -457,30 +492,46 @@ function renderMapNodes(region) {
 }
 
 function renderMapRegions(regions) {
-  mapList.innerHTML = regions.map(region => `
-    <article class="map-region">
-      <div class="map-route-card">
-        <img src="${region.image}" alt="" loading="lazy" />
-        <div class="route-line" aria-hidden="true"></div>
-        ${renderMapNodes(region)}
-        <span class="map-route-theme">${region.routeTheme}</span>
-      </div>
-      <div class="map-region-header">
-        <span>${region.priority}</span>
-        <h3>${region.region}</h3>
-      </div>
-      <p>${region.focus}</p>
-      <div class="map-meta-grid">
-        <div><span>Time</span><strong>${region.time}</strong></div>
-        <div><span>Reward</span><strong>${region.rewardType}</strong></div>
-        <div><span>Risk</span><strong>${region.risk}</strong></div>
-      </div>
-      <ul>
-        ${region.checkpoints.map(checkpoint => `<li>${checkpoint}</li>`).join("")}
-      </ul>
-      <p class="map-tip">${region.tip}</p>
-    </article>
-  `).join("");
+  mapList.innerHTML = `
+    <div class="map-legend wide">
+      <span><i class="map-node-waypoint"></i>Waypoint</span>
+      <span><i class="map-node-resource"></i>Resource</span>
+      <span><i class="map-node-boss"></i>Boss/Event</span>
+      <span><i class="map-node-hidden"></i>Hidden/Vendor</span>
+    </div>
+    ${regions.map(region => `
+      <article class="map-region">
+        <div class="map-route-card">
+          <img src="${region.image}" alt="" loading="lazy" />
+          <div class="route-line" aria-hidden="true"></div>
+          ${renderMapNodes(region)}
+          <span class="map-route-theme">${region.routeTheme}</span>
+        </div>
+        <div class="map-region-header">
+          <span>${region.priority}</span>
+          <h3>${region.region}</h3>
+        </div>
+        <p>${region.focus}</p>
+        <div class="map-meta-grid">
+          <div><span>Time</span><strong>${region.time}</strong></div>
+          <div><span>Reward</span><strong>${region.rewardType}</strong></div>
+          <div><span>Risk</span><strong>${region.risk}</strong></div>
+        </div>
+        <div class="route-choice-grid">
+          <div><span>Short Route</span><strong>${region.shortRoute}</strong></div>
+          <div><span>Long Route</span><strong>${region.longRoute}</strong></div>
+        </div>
+        <ol class="node-list">
+          ${(region.nodes || []).map((node, index) => `<li><span>${index + 1}</span><strong>${node.label}</strong><em>${node.type}</em></li>`).join("")}
+        </ol>
+        <ul>
+          ${region.checkpoints.map(checkpoint => `<li>${checkpoint}</li>`).join("")}
+        </ul>
+        <p class="map-confidence">${region.confidence}</p>
+        <p class="map-tip">${region.tip}</p>
+      </article>
+    `).join("")}
+  `;
 }
 
 mapLink.addEventListener("click", (e) => {
