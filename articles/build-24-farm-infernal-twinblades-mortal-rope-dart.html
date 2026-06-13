@@ -13,7 +13,7 @@
   "@type": "Article",
   "headline": "Farm Infernal Twinblades + Mortal Rope Dart Build Guide",
   "description": "English build guide for Farm Infernal Twinblades + Mortal Rope Dart: role, weapons, stat priority, skill loop, replacements, and use cases.",
-  "image": "../assets/images/where-winds-meet-combat-capsule.jpg",
+  "image": "../assets/images/wwm-build-fast-blades-rope.jpg",
   "author": {
     "@type": "Organization",
     "name": "Where Winds Meet Overseas Guide"
@@ -28,7 +28,8 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5494901700173736"
       crossorigin="anonymous"></script>
 
-  </head>
+  <script src="../articles-data.js"></script>
+</head>
   <body>
     <div class="site-shell">
       <header class="topbar" aria-label="Main navigation">
@@ -44,8 +45,8 @@
             <div class="article-meta"><span>Advanced</span><span>6 min read</span><span>Updated May 12, 2026</span></div>
           </header>
           <figure class="guide-image">
-            <img src="../assets/images/where-winds-meet-combat-capsule.jpg" alt="Where Winds Meet official Steam capsule art" loading="lazy" />
-            <figcaption>Steam official store capsule image, saved locally. Used as visual context for this guide topic.</figcaption>
+            <img src="../assets/images/wwm-build-fast-blades-rope.jpg" alt="Where Winds Meet official fast combat screenshot" loading="lazy" />
+            <figcaption>Official Where Winds Meet website media screenshot, saved locally and matched to fast DPS, rope dart, dual blade, and PvP build guidance.</figcaption>
           </figure>
           <section class="article-section">
             <h2>Quick Answer</h2>
@@ -76,5 +77,47 @@
       </main>
       <footer class="footer"><span>Where Winds Meet - Overseas Guide</span><a href="../articles.html">All Articles</a></footer>
     </div>
+  <script>
+(function(){
+  // TOC
+  var secs = document.querySelectorAll('.article-section');
+  if(secs.length > 1){
+    var items = [];
+    document.querySelectorAll('article h2').forEach(function(h,i){
+      if(!h.id) h.id = 'sec-'+(h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||i);
+      items.push('<li><a href="#'+h.id+'">'+h.textContent+'</a></li>');
+    });
+    if(items.length){
+      var nav = document.createElement('nav');
+      nav.className = 'article-toc';
+      nav.innerHTML = '<p>Contents</p><ol>'+items.join('')+'</ol>';
+      secs[0].parentNode.insertBefore(nav, secs[0]);
+    }
+  }
+  // Back to top
+  var btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.setAttribute('aria-label','Back to top');
+  btn.textContent = '↑';
+  document.body.appendChild(btn);
+  window.addEventListener('scroll', function(){ btn.classList.toggle('visible', window.scrollY > 300); },{passive:true});
+  btn.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  // Prev / Next
+  var articles = window.GuideArticles || [];
+  var current = location.pathname.split('/').pop();
+  var idx = articles.findIndex(function(a){ return a.url.split('/').pop() === current; });
+  if(idx >= 0 && articles.length > 1){
+    var prev = idx > 0 ? articles[idx-1] : null;
+    var next = idx < articles.length-1 ? articles[idx+1] : null;
+    var nav2 = document.createElement('nav');
+    nav2.className = 'article-prev-next';
+    nav2.setAttribute('aria-label','Article navigation');
+    nav2.innerHTML = (prev ? '<a href="'+prev.url.split('/').pop()+'" class="prev-article"><span>← Previous</span><strong>'+prev.title+'</strong></a>' : '<span></span>') +
+      (next ? '<a href="'+next.url.split('/').pop()+'" class="next-article"><span>Next →</span><strong>'+next.title+'</strong></a>' : '<span></span>');
+    var footer = document.querySelector('footer');
+    if(footer) footer.parentNode.insertBefore(nav2, footer);
+  }
+})();
+</script>
   </body>
 </html>

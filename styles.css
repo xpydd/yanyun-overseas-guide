@@ -829,7 +829,7 @@ p {
   margin: -22px -22px 18px;
   background:
     linear-gradient(180deg, rgba(16, 15, 14, 0.04), rgba(16, 15, 14, 0.68)),
-    var(--article-image, url("./assets/images/where-winds-meet-header.jpg")) center / cover;
+    var(--article-image, url("./assets/images/wwm-open-world-exploration.jpg")) center / cover;
   border-bottom: 1px solid var(--line);
   filter: saturate(1.06) contrast(1.04);
 }
@@ -867,28 +867,28 @@ p {
 }
 
 .article-index-group:nth-of-type(2) {
-  --article-image: url("./assets/images/where-winds-meet-header.jpg");
+  --article-image: url("./assets/images/wwm-open-world-exploration.jpg");
 }
 
 .article-index-group:nth-of-type(3) {
-  --article-image: url("./assets/images/where-winds-meet-combat-capsule.jpg");
+  --article-image: url("./assets/images/wwm-build-sword-spear-combat.jpg");
 }
 
 .article-index-group:nth-of-type(4) {
-  --article-image: url("./assets/images/where-winds-meet-map-hero.jpg");
+  --article-image: url("./assets/images/wwm-map-qinghe-route.jpg");
 }
 
 .article-index-group:nth-of-type(5),
 .article-index-group:nth-of-type(6) {
-  --article-image: url("./assets/images/where-winds-meet-open-world-bg.jpg");
+  --article-image: url("./assets/images/wwm-daily-routine-city.jpg");
 }
 
 .article-index-group:nth-of-type(7) {
-  --article-image: url("./assets/images/where-winds-meet-header.jpg");
+  --article-image: url("./assets/images/wwm-troubleshooting-combat.jpg");
 }
 
 .article-index-group:nth-of-type(8) {
-  --article-image: url("./assets/images/where-winds-meet-map-hero.jpg");
+  --article-image: url("./assets/images/wwm-updates-release-banner.jpg");
 }
 
 .article-list-card:hover {
@@ -934,7 +934,7 @@ p {
   background:
     linear-gradient(90deg, rgba(16, 15, 14, 0.92), rgba(16, 15, 14, 0.58)),
     linear-gradient(0deg, rgba(16, 15, 14, 0.88), transparent 60%),
-    url("./assets/images/where-winds-meet-header.jpg") center / cover;
+    url("./assets/images/wwm-open-world-exploration.jpg") center / cover;
   box-shadow: var(--shadow);
 }
 
@@ -1677,7 +1677,7 @@ p {
   background:
     linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
     linear-gradient(135deg, rgba(215, 163, 58, 0.24), transparent 54%),
-    url("./assets/images/where-winds-meet-combat-capsule.jpg") center / cover;
+    url("./assets/images/wwm-build-sword-spear-combat.jpg") center / cover;
   color: var(--gold);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 12px;
@@ -1691,7 +1691,7 @@ p {
   background:
     linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
     linear-gradient(135deg, rgba(185, 74, 58, 0.32), transparent 54%),
-    url("./assets/images/where-winds-meet-open-world-bg.jpg") center / cover;
+    url("./assets/images/wwm-build-boss-breaker.jpg") center / cover;
   color: #e38a80;
 }
 
@@ -1700,7 +1700,7 @@ p {
   background:
     linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
     linear-gradient(135deg, rgba(79, 174, 140, 0.32), transparent 54%),
-    url("./assets/images/where-winds-meet-map-hero.jpg") center / cover;
+    url("./assets/images/wwm-build-support-fan-umbrella.jpg") center / cover;
   color: var(--jade);
 }
 
@@ -1709,7 +1709,7 @@ p {
   background:
     linear-gradient(180deg, transparent, rgba(23, 21, 20, 0.92)),
     linear-gradient(135deg, rgba(111, 166, 189, 0.34), transparent 54%),
-    url("./assets/images/where-winds-meet-header.jpg") center / cover;
+    url("./assets/images/wwm-build-fast-blades-rope.jpg") center / cover;
   color: #9fb7d6;
 }
 
@@ -2454,3 +2454,140 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+.article-toc {
+  margin: 0 0 22px;
+  padding: 20px 28px;
+  border: 1px solid var(--line);
+  background: rgba(36, 32, 28, 0.58);
+}
+.article-toc p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.article-toc ol {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 6px;
+}
+.article-toc a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+}
+.article-toc a:hover { color: var(--gold); }
+
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(36, 32, 28, 0.9);
+  color: var(--gold);
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 100;
+}
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* === Article TOC === */
+.article-toc {
+  margin: 0 0 22px;
+  padding: 20px 28px;
+  border: 1px solid var(--line);
+  background: rgba(36, 32, 28, 0.58);
+}
+.article-toc p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.article-toc ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.article-toc a { color: var(--ink); text-decoration: none; font-size: 15px; }
+.article-toc a:hover { color: var(--gold); }
+
+/* === Back to top === */
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(36, 32, 28, 0.9);
+  color: var(--gold);
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 100;
+}
+.back-to-top.visible { opacity: 1; pointer-events: auto; }
+
+/* === Prev / Next nav === */
+.article-prev-next {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 920px;
+  margin: 0 auto 32px;
+  padding: 0 24px;
+}
+.article-prev-next a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 45%;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(36, 32, 28, 0.58);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+.article-prev-next a:hover { border-color: rgba(215, 163, 58, 0.5); }
+.article-prev-next a span { color: var(--muted); font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.article-prev-next a strong { color: var(--ink); font-size: 14px; line-height: 1.4; }
+.next-article { text-align: right; margin-left: auto; }
+
+/* === Articles search bar === */
+.articles-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 32px;
+  padding: 0 24px;
+}
+.articles-search-bar input {
+  flex: 1;
+  max-width: 480px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(36, 32, 28, 0.8);
+  color: var(--ink);
+  font-size: 15px;
+}
+.articles-search-bar input:focus { outline: none; border-color: rgba(215, 163, 58, 0.5); }
+.articles-search-bar span { color: var(--muted); font-size: 13px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }

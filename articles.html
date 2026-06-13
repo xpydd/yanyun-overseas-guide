@@ -20,7 +20,10 @@
       </header>
       <main class="page-main">
         <section class="page-hero"><p class="section-label">Guide Library</p><h1>100 English Where Winds Meet Guides</h1><p>Static SEO article pages for overseas players. Each article uses real project data, official image context, and source links for patch-sensitive claims.</p></section>
-        
+        <div class="articles-search-bar">
+          <input type="search" id="articles-filter" placeholder="Search guides…" autocomplete="off" />
+          <span id="articles-count"></span>
+        </div>
           <section class="article-index-group">
             <div class="section-heading"><p class="section-label">Beginner Guide</p><h2>Beginner Guide Articles</h2><p>15 focused guides for this topic.</p></div>
             <div class="article-list-grid">
@@ -165,5 +168,33 @@
       </main>
       <footer class="footer"><span>Where Winds Meet - Overseas Guide</span><a href="./index.html">Back Home</a></footer>
     </div>
+    <script>
+(function(){
+  var input = document.getElementById('articles-filter');
+  var countEl = document.getElementById('articles-count');
+  var cards = Array.from(document.querySelectorAll('.article-list-card'));
+  var groups = Array.from(document.querySelectorAll('.article-index-group'));
+  var noResults = document.createElement('p');
+  noResults.className = 'articles-no-results';
+  noResults.textContent = 'No guides found.';
+  noResults.style.cssText = 'padding:24px;color:var(--muted);display:none';
+  document.querySelector('main').appendChild(noResults);
+  input.addEventListener('input', function(){
+    var q = this.value.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(card){
+      var show = !q || card.textContent.toLowerCase().includes(q);
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+    groups.forEach(function(group){
+      var any = Array.from(group.querySelectorAll('.article-list-card')).some(function(c){ return c.style.display !== 'none'; });
+      group.style.display = any ? '' : 'none';
+    });
+    countEl.textContent = q ? visible + ' result' + (visible !== 1 ? 's' : '') : '';
+    noResults.style.display = (q && visible === 0) ? '' : 'none';
+  });
+})();
+    </script>
   </body>
 </html>
